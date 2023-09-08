@@ -595,7 +595,6 @@
     
     .links-dir{
         display: flex;
-        /* justify-content: right; */
         gap: 8%;
     }
     
@@ -828,8 +827,8 @@
 
     .botao-menu{
         display: flex;
-        margin-top: 2.5%;
-        margin-right: 10%;
+        /* margin-top: 2.5%; */
+        /* margin-right: 10%; */
    }
     
     .container{
