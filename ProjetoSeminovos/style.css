@@ -1,0 +1,1014 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+}
+
+.navbar{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 8px solid #1c417b;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo > img{
+    width: 60%;
+    object-fit: cover;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo > i{
+    text-align: center;
+    color: #1c417b;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.links-esq{
+    display: flex;
+    gap: 30%;
+}
+
+.links-dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.nav-link:hover{
+    transition: .3s;
+    padding: 5px;
+    background-color: #1c417b;
+    border-radius: 15px;
+}
+
+.botao-menu{
+    display: none;
+    gap: 20px;
+}
+
+.container{
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.container-estoque{
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.h1{
+    font-size: 300%;
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e5066;
+    border: 8px solid #1c417b;
+    border-radius: 20px;
+}
+
+.endereco{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 20px auto;
+
+}
+
+.card{
+    border: 5px solid #1c417b;
+    width: 300px;
+    text-align: center;
+    padding: 10px auto;
+    display: inline-block;
+    margin:10px;
+    transition: .5s;
+}
+
+.picture{
+    width: 100%;
+}
+
+.title{
+    position: relative;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+}
+
+.valor{
+    background-color: #1c417b;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.title:hover{
+    background-color: #1c417b;
+    transition: .5s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.paginacao{
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.pag-item{
+    background-color: #3e5066;
+    border: 2px solid #1c417b;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.pag-item:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.footer{
+    background-color: white;
+    border-top: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer > p{
+    background-color: #1c417b;
+}
+
+.botao-home {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(imagens/pata.PNG);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-home > span {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.botao-home > span:hover {
+    background-color: white;
+    border-radius: 50%;
+    color: #1c417b;
+}
+
+.tabela{
+    background-color: #a18f8f;
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #1c417b;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+}
+
+.tabela > thead{
+    background-color: #3e5066;
+    border: 5px solid #1c417b;
+}
+
+.tabela > tbody > tr > td{
+    padding: 16px;
+}
+
+.tabela > tbody > tr:nth-of-type(even){
+    background-color: whitesmoke;
+
+}
+
+.tabela > tbody > tr:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sumario {
+    display: flexbox;
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    background-color: #a18f8f;
+    border: 5px solid #1c417b;
+}
+
+.sumario-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgb(179, 190, 23);
+    border: 5px solid #1c417b;
+}
+
+.sumario-item > p{
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.dados-vendas {
+    border: 5px solid #1c417b;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+
+}
+
+.dados-vendas > h2 {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border: 5px solid #1c417b;
+    background-color: #a18f8f;
+}
+
+.tabela-vendas {
+    width: 100%;
+    border: 5px solid #1c417b;
+}
+
+.tabela-vendas th, .tabela-vendas td {
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #1c417b;
+}
+
+.tabela-th{
+    background-color: #1c417b;
+    color: white;
+}
+
+.historia{
+    background-color: #1c417b;
+    margin: 0% 10% 8% 10%;
+    padding: 20px;
+}
+
+.historia > .container{
+    margin: 0;
+    padding: 0;
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+.historia > .container > h1{
+    font-size: 15pt;
+    font-weight: bolder;
+    text-decoration: none;
+    max-width: 90%;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.container >  .img-ralph{
+    margin: -5% 5% 0% 0%;
+}
+
+.container > .hist-ralph{
+    margin: -5% 8% 0% -18%;
+}
+
+.container > .img-teddy{
+    margin: -28% -85% 0% 0%;
+}
+
+.container > .hist-teddy{
+    margin: -20% 0% 0% -13%;
+}    
+
+.historia > .container > p{
+    font-size: 15pt;
+    font-weight: bolder;
+    width: 50%;
+    float: left;
+}
+
+@media(max-width: 790px){
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        max-width: 100%;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo > img{
+        width: 80%;
+    }
+    
+    .logo > i{
+        background-color: antiquewhite;
+        font-size: 100%;
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: left;
+        padding-right: 4%;
+    }
+    
+    .links-esq{
+        display: flex;
+        gap: 2%;
+    }
+    
+    .links-dir{
+        display: flex;
+        justify-content: right;
+        gap: 8%;
+    }
+    
+    .botao-menu:hover{
+        transition: .5s;
+        padding: 10px 18px;
+        background-color: #1c417b;
+        border-radius: 12px;
+    }
+    
+    .card{
+        max-width: 85%;
+    }
+    
+    .paginacao{
+        text-align: left;
+        padding-left: 0px;
+    }
+    
+    .pag-item{
+        margin: 3px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+
+    .endereco{
+        width: 80%;
+        text-align: left;
+    }
+    
+    .botao-home {
+        bottom: 28px;
+        right: 10px;
+    }
+    
+    .tabela{
+        background-color: #a18f8f;
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+        border-collapse: collapse;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 5px solid #1c417b;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    }
+    
+    .tabela > thead{
+        background-color: #3e5066;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela > tbody > tr > td{
+        padding: 16px;
+    }
+    
+    .tabela > tbody > tr:nth-of-type(even){
+        background-color: whitesmoke;
+    
+    }
+    
+    .tabela > tbody > tr:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .sumario {
+        display: flexbox;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+        background-color: #a18f8f;
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item {
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        background-color: rgb(179, 190, 23);
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item > p{
+        font-size: 20px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    
+    .dados-vendas {
+        border: 5px solid #1c417b;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    
+    }
+    
+    .dados-vendas > h2 {
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        border: 5px solid #1c417b;
+        background-color: #a18f8f;
+    }
+    
+    .tabela-vendas {
+        width: 100%;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-vendas th, .tabela-vendas td {
+        padding: 10px;
+        text-align: left;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-th{
+        background-color: #1c417b;
+        color: white;
+    }
+    
+    .historia{
+        background-color: #1c417b;
+        margin: 0% 10% 8% 10%;
+        padding: 20px;
+    }
+    
+    .historia > .container{
+        margin: 0;
+        padding: 0;
+        margin: 15px 15px;
+        padding: 15px 15px;
+    }
+    
+    .historia > .container > h1{
+        font-size: 15pt;
+        font-weight: bolder;
+        text-decoration: none;
+        max-width: 90%;
+        display: flexbox;
+        flex-direction: column;
+    }
+    
+    .container >  .img-ralph{
+        margin: -5% 5% 0% 0%;
+    }
+    
+    .container > .hist-ralph{
+        margin: -5% 8% 0% -18%;
+    }
+    
+    .container > .img-teddy{
+        margin: -28% -85% 0% 0%;
+    }
+    
+    .container > .hist-teddy{
+        margin: -20% 0% 0% -13%;
+    }    
+    
+    .historia > .container > p{
+        font-size: 15pt;
+        font-weight: bolder;
+        width: 50%;
+        float: left;
+    }
+    
+
+}
+
+@media(max-width: 790px){
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        max-width: 100%;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo > img{
+        width: 80%;
+    }
+    
+    .logo > i{
+        background-color: antiquewhite;
+        font-size: 100%;
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        padding-right: 0%;
+    }
+    
+    .links-esq{
+        display: none;
+    }
+    
+    .links-dir{
+        display: flex;
+        /* justify-content: right; */
+        gap: 8%;
+    }
+    
+    .botao-menu:hover{
+        transition: .5s;
+        padding: 10px 18px;
+        background-color: #1c417b;
+        border-radius: 12px;
+    }
+
+    .botao-menu{
+        display: flex;
+        margin-right: 10%;
+   }
+    
+    .card{
+        max-width: 85%;
+    }
+    
+    .paginacao{
+        text-align: left;
+        padding-left: 0px;
+    }
+    
+    .pag-item{
+        margin: 3px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+
+    .endereco{
+        width: 80%;
+        text-align: left;
+    }
+    
+    .botao-home {
+        bottom: 28px;
+        right: 10px;
+    }
+    
+    .tabela{
+        background-color: #a18f8f;
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+        border-collapse: collapse;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 5px solid #1c417b;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    }
+    
+    .tabela > thead{
+        background-color: #3e5066;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela > tbody > tr > td{
+        padding: 16px;
+    }
+    
+    .tabela > tbody > tr:nth-of-type(even){
+        background-color: whitesmoke;
+    
+    }
+    
+    .tabela > tbody > tr:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .sumario {
+        display: flexbox;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+        background-color: #a18f8f;
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item {
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        background-color: rgb(179, 190, 23);
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item > p{
+        font-size: 20px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    
+    .dados-vendas {
+        border: 5px solid #1c417b;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    
+    }
+    
+    .dados-vendas > h2 {
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        border: 5px solid #1c417b;
+        background-color: #a18f8f;
+    }
+    
+    .tabela-vendas {
+        width: 100%;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-vendas th, .tabela-vendas td {
+        padding: 10px;
+        text-align: left;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-th{
+        background-color: #1c417b;
+        color: white;
+    }
+    
+    .historia{
+        background-color: #1c417b;
+        margin: 0% 10% 8% 10%;
+        padding: 20px;
+    }
+    
+    .historia > .container{
+        margin: 0;
+        padding: 0;
+        margin: 15px 15px;
+        padding: 15px 15px;
+    }
+    
+    .historia > .container > h1{
+        font-size: 15pt;
+        font-weight: bolder;
+        text-decoration: none;
+        max-width: 90%;
+        display: flexbox;
+        flex-direction: column;
+    }
+    
+    .container >  .img-ralph{
+        margin: -5% 5% 0% 0%;
+    }
+    
+    .container > .hist-ralph{
+        margin: -5% 8% 0% -18%;
+    }
+    
+    .container > .img-teddy{
+        margin: -28% -85% 0% 0%;
+    }
+    
+    .container > .hist-teddy{
+        margin: -20% 0% 0% -13%;
+    }    
+    
+    .historia > .container > p{
+        font-size: 15pt;
+        font-weight: bolder;
+        width: 50%;
+        float: left;
+    }
+    
+
+}
+
+@media(max-width: 480px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        max-width: 100%;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo > img{
+        width: 100%;
+        margin: 0px 10%;
+    }
+    
+    .logo > i{
+        background-color: antiquewhite;
+        font-size: 100%;
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        list-style: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .links-esq{
+        display: none;
+    }
+    
+    .links-dir{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: larger;
+        margin: 5px;
+        margin-bottom: -25px;
+    }
+    
+    .botao-menu:hover{
+        transition: .5s;
+        padding: 10px 18px;
+        background-color: #1c417b;
+        border-radius: 12px;
+    }
+
+    .botao-menu{
+        display: flex;
+        margin-top: 2.5%;
+        margin-right: 10%;
+   }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0.5%;
+    }
+
+    .container-estoque{
+        padding: 0%;
+        margin: 0.5%;
+        padding-bottom: 120px;
+    }
+    
+    
+    .h1{
+        padding: 0px;
+        font-size: 100%;
+    }
+    
+    .card{
+        max-width: 85%;
+    }
+    
+    .paginacao{
+        text-align: left;
+        padding-left: 0px;
+    }
+    
+    .pag-item{
+        margin: 3px;
+        border-radius: 10px;
+        font-size: larger;
+    }
+
+    .endereco{
+        width: 80%;
+        text-align: left;
+    }
+    
+    .botao-home {
+        bottom: 28px;
+        right: 10px;
+    }
+    
+    .tabela{
+        background-color: #a18f8f;
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+        border-collapse: collapse;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 5px solid #1c417b;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    }
+    
+    .tabela > thead{
+        background-color: #3e5066;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela > tbody > tr > td{
+        padding: 16px;
+    }
+    
+    .tabela > tbody > tr:nth-of-type(even){
+        background-color: whitesmoke;
+    
+    }
+    
+    .tabela > tbody > tr:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .sumario {
+        display: flexbox;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+        background-color: #a18f8f;
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item {
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 20px 20px 20px;
+        background-color: rgb(179, 190, 23);
+        border: 5px solid #1c417b;
+    }
+    
+    .sumario-item > p{
+        font-size: 20px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    
+    .dados-vendas {
+        border: 5px solid #1c417b;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    
+    }
+    
+    .dados-vendas > h2 {
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        border: 5px solid #1c417b;
+        background-color: #a18f8f;
+    }
+    
+    .tabela-vendas {
+        width: 100%;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-vendas th, .tabela-vendas td {
+        padding: 10px;
+        text-align: left;
+        border: 5px solid #1c417b;
+    }
+    
+    .tabela-th{
+        background-color: #1c417b;
+        color: white;
+    }
+    
+    .historia{
+        background-color: #1c417b;
+        margin: 0% 10% 8% 10%;
+        padding: 20px;
+    }
+    
+    .historia > .container{
+        margin: 0;
+        padding: 0;
+        margin: 15px 15px;
+        padding: 15px 15px;
+    }
+    
+    .historia > .container > h1{
+        font-size: 15pt;
+        font-weight: bolder;
+        text-decoration: none;
+        max-width: 90%;
+        display: flexbox;
+        flex-direction: column;
+    }
+    
+    .container >  .img-ralph{
+        margin: -5% 5% 0% 0%;
+    }
+    
+    .container > .hist-ralph{
+        margin: -5% 8% 0% -18%;
+    }
+    
+    .container > .img-teddy{
+        margin: -28% -85% 0% 0%;
+    }
+    
+    .container > .hist-teddy{
+        margin: -20% 0% 0% -13%;
+    }    
+    
+    .historia > .container > p{
+        font-size: 15pt;
+        font-weight: bolder;
+        width: 50%;
+        float: left;
+    }
+    
+
+}
