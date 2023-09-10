@@ -547,6 +547,7 @@
         width: 100%;
         margin-top: -15vh;
         background-size: contain;
+        background-repeat: no-repeat;
     }
     
     .container-teddy{
@@ -596,14 +597,20 @@
     .links-esq{
         display: none;
     }
-    
+
     .links-dir{
         display: flex;
-        justify-content: center;
-        justify-items: center;
+        text-align: center;
         font-size: larger;
         margin: 5px;
         margin-bottom: -25px;
+    }
+
+    .nav-lin{
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
     }
     
     .botao-menu:hover{
@@ -753,26 +760,35 @@
     }
     
     .historia{
-        width: 90%;
+        margin: 0;
+        width: 100%;
     }
     
     .historia > .container{
-        margin: 2%;
+        margin: 10px 0 0 0 ;
     }
     
     .container-ralph{
-        border-radius: 15px solid black;
         width: 100%;
+        margin-top: -50%;
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    .hist-ralph{
+        margin-top: 100%;
+    }
     
     .container-teddy{
-        max-width: 100%;
-        margin-bottom: 0vh;
-        margin-top: -50vh;
+        width: 100%;
+        margin-top: -70%;
+        margin-bottom: 30%;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    .hist-teddy{
+        margin-top: 120%;
     }
     
 
