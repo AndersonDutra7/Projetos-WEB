@@ -559,7 +559,7 @@
     }
 }
     
-@media(max-width: 480px){
+@media(max-width: 520px){
     .navbar{
         display: flex;
         flex-direction: column;
@@ -753,12 +753,12 @@
     }
     
     .historia{
-        margin: 0;
+        margin: 2% 0%;
         width: 100%;
     }
     
     .historia > .container{
-        margin: 10px 0 0 0 ;
+        margin: 3% 0 0 0 ;
     }
     
     .container-ralph{
@@ -783,6 +783,43 @@
     .hist-teddy{
         margin-top: 120%;
     }
+}
+
+@media(max-width: 325px){
+    .pag-item{
+        font-size: x-small;
+    }
+
+    .endereco{
+        font-size: x-small;
+    }
+    
+    .botao-home {
+        bottom: 28px;
+    }
+
+    .links-dir{
+        gap: 10%;
+    }
+    
+    .container-ralph{
+        margin-top: -80%;
+    }
+
+    .hist-ralph{
+        margin-top: 130%;
+    }
+    
+    .container-teddy{
+        margin-top: -110%;
+        margin-bottom: 50%;
+    }
+
+    .hist-teddy{
+        margin-top: 160%;
+    }
     
 
 }
+
+
