@@ -55,11 +55,11 @@
     }
 
     .botao{
-        padding: 20px;
+        padding: 10px;
         top: -20%;
     }
 
     .botoes .botao img{
-        max-width: 50px;
+        max-width: 40px;
     }
 }
