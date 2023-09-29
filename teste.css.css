@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+header{
+    background: url(./imagens/london.jpg);
+    height: 800px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    width: 100%;
+    color: orangered;
+    font-size: 22px;
+}
+
+.travel{
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.travel-options{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.icon-travel{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+.icon-travel:hover{
+    background-color: orangered;
+}
