@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333; /* Cor de fundo escura */
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #imagem {
+            max-width: 300px;
+            /* border-radius: 50%; */
+        }
+
+        #titulo {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #descricao {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #barra-de-divisao {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        #projetos {
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #lista-projetos {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #lista-projetos li {
+            margin: 10px 0;
+        }
+
+        #lista-projetos a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        #lista-projetos a:hover {
+            color: #00bcd4; /* Cor do link ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="imagem" src="imagens/perfil-port.png" alt="Sua Imagem">
+        <h1 id="titulo">Seu Nome</h1>
+        <p id="descricao">Descrição sobre você.</p>
+        <div id="barra-de-divisao"></div>
+        <h2 id="projetos">Meus Projetos</h2>
+        <ul id="lista-projetos">
+            <li><a href="#">Projeto 1</a></li>
+            <li><a href="#">Projeto 2</a></li>
+            <li><a href="#">Projeto 3</a></li>
+            <!-- Adicione mais projetos conforme necessário -->
+        </ul>
+    </div>
+</body>
+</html>
