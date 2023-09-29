@@ -22,7 +22,7 @@ body{
 }
 
 .cabecalho{
-    background-image: url("_imagens/london.jpg");
+    background-image: url("imagens/london.jpg");
     background-size: cover;
     height: 70vh;
     display: block;
