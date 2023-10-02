@@ -28,15 +28,25 @@ const personagens = document.querySelectorAll('.personagem');
 botoes.forEach( (botao, indice) => {
     botao.addEventListener("click", () => {
         // OBJETIVO 1- passo 3 - verificar se já exista um personagem selecionado, se sim, devemos remover a seleção dele
-        const botaoSelecionado = document.querySelector(".botao.selecionado");
-        botaoSelecionado.classList.remove('selecionado');        
+        desSelecionarBotao(); 
+        // OBJETIVO 2 - passo 3 - verificar se já exista um personagem selecionado, se sim, devemos remover 
+        // a seleção dele
+        desSelecionarPersonagem();
 
         // OBJETIVO 1 - passo 2 - adicionar a classe "selecionado" no botão que o usuário clicou
         botao.classList.add('selecionado');
-
         // OBJETIVO 2 - passo 2 - adicionar a classe "selecionado" no personagem que o usuário selecionou
         personagens[indice].classList.add('selecionado');
 
-        personagens[indice].classList.remove('selecionado');
-    });
-})
+    });   
+});
+
+function desSelecionarPersonagem() {
+    const personagemSelecionado = document.querySelector('.personagem.selecionado');
+    personagemSelecionado.classList.remove('selecionado');
+}
+
+function desSelecionarBotao() {
+    const botaoSelecionado = document.querySelector(".botao.selecionado");
+    botaoSelecionado.classList.remove('selecionado');
+}
