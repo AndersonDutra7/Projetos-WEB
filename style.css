@@ -7,35 +7,27 @@
     color: white;
     background-color: rgb(32, 27, 27);
     font-family: 'Titillium Web', sans-serif;
-    width: 90%;
 }
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    /* width: 100vw */
+    /* height: 100vh; */
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
 img{
-    width: 40%;
+    width: 100%;
 }
 
 h1{
-    padding: 15px;
-    margin: 20px;
-    margin-top: -8%;
-    width: 90%;
+    margin-top: -10%;
+    background-color: rgb(75, 75, 85);
+    border-radius: 20px 0px 20px 0px;
+    opacity: 0.7;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -43,8 +35,7 @@ h1{
 }
 
 h2{
-    margin: 10px;
-    margin-top: -2%;
+    padding: 10px;
     border-bottom: 5px solid rgb(75, 75, 85);
     display: flex;
     justify-content: center;
@@ -52,18 +43,14 @@ h2{
 }
 
 ol{
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left; 
+    justify-content: center;
 }
 
 a{
     color: aqua;
     font-size: 20px;
     margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
 }
