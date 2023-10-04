@@ -24,7 +24,7 @@ img{
 }
 
 h1{
-    margin-top: -10%;
+    margin-top: -1%;
     background-color: rgb(75, 75, 85);
     border-radius: 20px 0px 20px 0px;
     opacity: 0.7;
@@ -53,4 +53,14 @@ a{
     color: aqua;
     font-size: 20px;
     margin-bottom: 4px;
+}
+
+@media((max-width: 320px)){
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
 }
