@@ -14,10 +14,8 @@ body{
 .container{
     background-color: antiquewhite;
     width: 80%;
-    height: 330vh;
     display: flexbox;
     margin: 0 auto;
-    position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
 }
 
@@ -72,11 +70,25 @@ body{
     width: 100%;
 }
 
-.header-section-flight{
+.header-section-flight, .header-section-hotel, .header-section-rentall{
     grid-area: flight;
-    background-color: red;
     width: 100%;
     padding: 1%;
+}
+
+.header-section-flight:hover{
+    background-color: red;
+    cursor: pointer
+}
+
+.header-section-hotel:hover{
+    background-color: red;
+    cursor: pointer
+}
+
+.header-section-rentall:hover{
+    background-color: red;
+    cursor: pointer
 }
 
 .header-section > h1{
@@ -111,6 +123,11 @@ body{
     background-color: rgb(88, 88, 88);
     color: aliceblue;
     border: none;
+}
+
+.header-section > button:hover{
+    cursor: pointer;
+    background-color: brown;
 }
 
 .main-ofers, .main-tickets, .main-subscribe ,.main-contact{
@@ -165,6 +182,12 @@ body{
     height: 100%;
 }
 
+.img-cinque:hover, .img-franc:hover, .img-paris:hover, .img-pisa:hover, .img-york:hover{
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid red;
+}
+
 legend{
     position: relative;
     top: -40px;
@@ -208,6 +231,10 @@ legend{
     margin-left: 3%;
 }
 
+.ticket-card > a:hover{
+    background-color: brown;
+}
+
 .main-subscribe{
     background-color: rgb(109, 109, 109);
     color: white;
@@ -243,6 +270,10 @@ legend{
     background-color: rgb(247, 154, 170);
 }
 
+.main-subscribe > button:hover, .main-contact > button:hover{
+    background-color: brown;
+    cursor: pointer;
+}
 .main-contact{
     margin-top: 3%;
     font-size: 16px;
@@ -276,7 +307,7 @@ legend{
 
 footer{
     font-size: 11.5px;
-    margin-top: 2%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,23 +319,21 @@ footer{
     color: rgb(36, 36, 36);
 }
 
-@media screen and (max-width: 768px) {
-    .container{
-        height: 250vh;
-    }
+.powered{
+    padding-bottom: 2%;
+}
 
+@media screen and (max-width: 769px) {
     .cabecalho{
-        height: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-bar{
         justify-content: space-around;
-        padding: 25px;
-    }
-
-    .header-section{
-        height: 60%;
-        margin: 6.5% 12%;
     }
 
     .header-section > h1{
@@ -343,28 +372,19 @@ footer{
 }
 
 @media screen and (max-width: 450px) {
-
-    .container{
-        height: 760vh;
-    }
-
     .cabecalho{
         background-image: none;
     }
 
     .nav-bar{
         justify-content: space-between;
+        padding: 10px;
     }
 
     .header-section{
         margin: 0%;
         width: 100%;
-        height: 55%;
-        margin-top: 70%;
-    }
-
-    .header-section > nav{
-        margin-top: -250px;
+        display: block;
     }
     
     .header-section-flight{
@@ -395,18 +415,13 @@ footer{
     }
     
     .header-section > button{
-        margin-top: -30%;
+        margin-top: -35px;
         margin-left: 4%;
-        padding: 2%;
+        padding: 4%;
     }
 
-    .main-ofers, .main-tickets, .main-subscribe ,.main-contact{
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .main-ofers{
-        margin-top: -65%;
+    main{
+        background-color: rgb(209, 207, 209);
     }
     
     .main-ofers-cards, .main-tickets-cards{
