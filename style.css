@@ -55,7 +55,7 @@ a{
     margin-bottom: 4px;
 }
 
-@media((max-width: 320px)){
+@media((max-width: 460px)){
     h1{
         font-size: 30px;
     }
