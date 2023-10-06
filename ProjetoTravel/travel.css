@@ -374,6 +374,7 @@ footer{
 @media screen and (max-width: 450px) {
     .container{
         background-color: rgb(185, 185, 185);
+        overflow-x: hidden;
     }
     .cabecalho{
         background-image: none;
