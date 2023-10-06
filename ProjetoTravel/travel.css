@@ -372,6 +372,9 @@ footer{
 }
 
 @media screen and (max-width: 450px) {
+    .container{
+        background-color: rgb(185, 185, 185);
+    }
     .cabecalho{
         background-image: none;
     }
@@ -427,9 +430,13 @@ footer{
     .main-ofers-cards, .main-tickets-cards{
         display: block;
     }
+
+    .img-cinque:hover, .img-franc:hover, .img-paris:hover, .img-pisa:hover, .img-york:hover{
+        border: 2px solid rgb(53, 32, 32);
+    }
         
     .main-subscribe{
-        height: 50vh;
+       padding: 10px;
     }
     
     .main-subscribe > h3{
@@ -455,17 +462,17 @@ footer{
     
     .main-subscribe > button{
         padding: 3%;
+        margin-top: 5%;
         margin-left: 3%;
     }
     
     .main-contact > input{
-        padding: 3%;
+        padding: 5%;
     }
     
     .main-contact > button{
-        padding: 3%;
+        padding: 5%;
     }
-    
 }
 
 @media screen and (max-width: 320px) {
@@ -566,12 +573,7 @@ footer{
         margin-left: 3%;
     }
     
-    .main-contact > input{
-        padding: 3%;
-    }
-    
     .main-contact > button{
-        padding: 3%;
         margin-bottom: 10%;
     }
     
