@@ -7,12 +7,14 @@
 .container > h1{
     background-color: gray;
     padding: 5px;
+    margin: 3px;
     border-radius: 20px 0px 0px 0px;
 }
 
 .container > form{
     background-color: gray;
     padding: 5px;
+    margin: 3px;
     border-radius: 0px 0px 20px 0px;
 }
 
@@ -26,7 +28,7 @@
     text-transform: uppercase;
 }
 
-.btn-buscar, .prev-page, .next-page{
+.btn-buscar{
     font-weight: bolder;
     text-transform: uppercase;
     padding: 5px;
@@ -34,7 +36,24 @@
     border: none;
     border-bottom: 5px solid black;
     border-left: 5px solid black;
-    background-color: rgb(58, 146, 134)
+    background-color: rgb(58, 146, 134);
+    cursor: pointer;
+}
+
+.prev-page, .next-page{
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    background-color: rgb(58, 146, 134);
+    cursor: pointer;
+}
+
+.btn-buscar:hover, .prev-page:hover, .next-page:hover{
+    background-color: aqua;
 }
 
 .filme-info, .paginacao{
@@ -89,13 +108,7 @@ img{
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.9);
 }
 
-/* .prevPage, .prevPage{
+p{
+    font-size: 25px;
     font-weight: bolder;
-    text-transform: uppercase;
-    padding: 5px;
-    margin-left: 10px;
-    border: none;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    background-color: rgb(58, 146, 134)
-} */
+}
