@@ -29,6 +29,7 @@
         align-items: flex-end;
         width: 100%;
         padding: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
     }
 
     .botoes .botao img{
@@ -48,12 +49,17 @@
         top: 250px;
     }
 
-    .conteudo {
-        top: -30%;
+    .conteudo .nome-personagem {
+        position: fixed;
+        top: 350px;
+        font-size: 26px;
     }
 
-    .conteudo .nome-personagem {
-        font-size: 24px;
+    .conteudo .descricao{
+        width: 90%;
+        top: 410px;
+        position: fixed;
+        font-size: 20px;
     }
 
     .botoes {
@@ -74,7 +80,6 @@
     }
 
     .conteudo .logo {
-        position: fixed;
         width: 140px;
         height: 70px;
         top: 10px;
@@ -82,23 +87,12 @@
     }
 
     .conteudo .nome-personagem {
-        position: fixed;
         top: 190px;
         font-size: 24px;
     }
 
     .conteudo .descricao{
         width: 85%;
-        position: fixed;
         top: 250px;
     }
-
-    /* .botoes {
-        padding: 20px;
-        top: 0%;
-    }
-
-    .botoes .botao img {
-        max-width: 50px;
-    } */
 }
