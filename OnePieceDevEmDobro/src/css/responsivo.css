@@ -97,6 +97,7 @@
     }
 
     .botoes {
-        bottom: 10%;
+        align-items: center;
+        top: 300px;
     }
 }
