@@ -95,4 +95,8 @@
         width: 85%;
         top: 250px;
     }
+
+    .botoes {
+        top: -10%;
+    }
 }
