@@ -26,7 +26,7 @@
     text-transform: uppercase;
 }
 
-.btn-primary{
+.btn-buscar, .prev-page, .next-page{
     font-weight: bolder;
     text-transform: uppercase;
     padding: 5px;
@@ -37,7 +37,7 @@
     background-color: rgb(58, 146, 134)
 }
 
-.filme-info{
+.filme-info, .paginacao{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -88,3 +88,14 @@ img{
     width: 300px;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.9);
 }
+
+/* .prevPage, .prevPage{
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    background-color: rgb(58, 146, 134)
+} */
