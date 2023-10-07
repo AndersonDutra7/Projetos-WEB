@@ -7,6 +7,8 @@ let nextPageButton = document.getElementById('next-page');
 prevPageButton.style.display = 'none';
 nextPageButton.style.display = 'none';
 let paginaInicial = 1;
+let totalPaginas = 0;
+let totalResultados = 0;
 
 async function getApi(filme, pagina) {
     let request = await fetch(`https://www.omdbapi.com/?s=${filme}&apikey=e6c43dc6&page=${pagina}`);
@@ -27,8 +29,16 @@ async function getApi(filme, pagina) {
                 </div>
             `;
         });
-        prevPageButton.style.display = 'block';
-        nextPageButton.style.display = 'block';
+
+        totalResultados = parseInt(data.totalResults);
+        totalPaginas = Math.ceil(data.totalResults / 10);
+        if (totalPaginas <= 1) {
+            prevPageButton.style.display = 'none';
+            nextPageButton.style.display = 'none';
+        } else {
+            prevPageButton.style.display = paginaInicial > 1 ? 'block' : 'none';
+            nextPageButton.style.display = paginaInicial < totalPaginas ? 'block' : 'none';
+        }
     } else {
         filmeInfo.innerHTML = "<p>Filme não encontrado.</p>";
     }
