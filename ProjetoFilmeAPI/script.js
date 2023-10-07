@@ -41,6 +41,8 @@ async function getApi(filme, pagina) {
         }
     } else {
         filmeInfo.innerHTML = "<p>Filme não encontrado.</p>";
+        prevPageButton.style.display = 'none';
+        nextPageButton.style.display = 'none';
     }
 }
 
