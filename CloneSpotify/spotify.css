@@ -60,14 +60,17 @@
 aside{
     grid-area: aside;
     border-radius: 10px;
-    height: 95vh;
-    display: block;
+    /* height: 150%; */
+    display: flex;
+    flex-direction: column;
 }
 
 .aside-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #558cb1;
+    border-radius: 10px;
 }
 
 .aside-header > button{
@@ -114,21 +117,23 @@ aside{
 }
 
 .aside-box2{
-    max-height: 200px;
-    position: relative;
+    height: 20vh;
+    /* position: relative; */
+    background-color: #cc2ab1;
 }
 
 .aside-box2:hover{
+    /* position: relative; */
     overflow-y: auto;
 }
 
 .aside-box2::-webkit-scrollbar {
     width: 15px;
     background-color: transparent;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 0; */
 }
 
 .aside-box2::-webkit-scrollbar-thumb {
@@ -137,10 +142,10 @@ aside{
     opacity: 0.7;
   }
   
-.aside-box2::-webkit-scrollbar-thumb:hover {
+/* .aside-box2::-webkit-scrollbar-thumb:hover {
     background-color: rgba(151, 143, 143, 0.5);
     opacity: 1;
-}
+} */
 
 .aside-box2 > div{
     background-color: rgb(35, 35, 35);
@@ -196,9 +201,14 @@ aside{
 
 .aside-footer{
     padding: 3%;
-    margin-top: 20%;
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: flex-end;
+    margin-top: 47%;
     /* max-height: 100%; */
     background-color: rgb(20, 20, 20);
+    background-color: red;
 }
 
 .aside-footer > a{
