@@ -113,7 +113,36 @@ aside{
     height: 72vh;
 }
 
-.aside-section > div{
+.aside-box2{
+    max-height: 200px;
+    position: relative;
+}
+
+.aside-box2:hover{
+    overflow-y: auto;
+}
+
+.aside-box2::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.aside-box2::-webkit-scrollbar-thumb {
+    height: 15%;
+    background-color: rgba(85, 85, 85, 0.5);
+    opacity: 0.7;
+  }
+  
+.aside-box2::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(151, 143, 143, 0.5);
+    opacity: 1;
+}
+
+.aside-box2 > div{
     background-color: rgb(35, 35, 35);
     border-radius: 10px;
     padding: 5%;
@@ -123,22 +152,46 @@ aside{
     font-weight: none;
 }
 
-.aside-section > div > h2{
+.aside-box2 > div > h2{
     font-size: 15px;
+    padding: 3px;
 }
 
-.aside-section > div > button{
+.aside-box2 > div > p{
+    padding: 3px;
+}
+
+.aside-box2 > div > button{
     padding: 3%;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bolder;
     border-radius: 20px;
     border: none;
 }
 
-.aside-section > div > button:hover{
-    cursor: cell;
+.aside-box2 > div > button:hover{
+    cursor: pointer;
     padding: 4%;
 }
+
+/* .aside-box2::before,
+.aside-box2::after {
+  content: "";
+  position: absolute;
+  width: 10px; /* Largura igual à da barra de rolagem */
+  /* height: 50%;
+  background-color: #f1f1f1;
+} */
+
+/* .aside-box2::before {
+  top: 0;
+  left: 0;
+} */
+
+/* .aside-box2::after {
+  bottom: 0;
+  left: 0;
+} */
 
 .aside-footer{
     padding: 3%;
