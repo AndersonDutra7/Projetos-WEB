@@ -1,3 +1,3 @@
-document.getElementById("btn-login").addEventListener("click", function() {
-    window.location.href = "/MarketPlace/src/login.html";
+document.getElementById("redirect-button").addEventListener("click", function() {
+    window.location.href = "outra_pagina.html";
 });
