@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 3px solid palevioletred;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-market-place {
+    background-image: url('/MarketPlace/src/imagens/market-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 60px;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    padding: 10px 50px;
+    color: palevioletred;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: palevioletred;
+    color: #ccc;
+}
+
+.btn-anunciar {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 50px;
+    background-color: palevioletred;
+    color: #ccc;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-anunciar:hover {
+    background-color: rgb(238, 159, 185);
+    color: rgb(61, 60, 60);
+}
