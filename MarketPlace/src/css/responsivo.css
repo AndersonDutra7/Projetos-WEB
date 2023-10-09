@@ -1,60 +1,52 @@
 @media screen and (max-width: 770px) {
 
-.navbar {
-    flex-direction: column;
+    .navbar {
+        flex-direction: column;
+    }
+
 }
 
-.logo-market-place {
-    background-image: url('../imagens/market-logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 200px;
-    height: 60px;
-}
+@media screen and (max-width: 450px) {
 
-.navbar-items {
-    display: flex;
-    align-items: center;
-}
+    .navbar {
+        flex-direction: column;
+    }
 
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    .navbar-items {
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
 
-.btn-login {
-    margin-left: 10px;
-    padding: 10px 50px;
-    color: palevioletred;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
+    input[type="text"] {
+        flex-grow: 1;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-.btn-login:hover {
-    background-color: palevioletred;
-    color: #ccc;
-}
-
-.btn-anunciar {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 50px;
-    background-color: palevioletred;
-    color: #ccc;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.btn-anunciar:hover {
-    background-color: rgb(238, 159, 185);
-    color: rgb(61, 60, 60);
-}
+    .btn-login {
+        width: 150px;
+        margin: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .btn-anunciar {
+        width: 150px;
+        margin: 20px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+        padding: 10px 50px;
+        color: palevioletred;
+        background-color: beige;
+        font-size: 18px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .btn-anunciar:hover {
+        background-color: palevioletred;
+        color: #ccc;
+    }
 
 }
