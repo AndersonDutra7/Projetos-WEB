@@ -27,7 +27,7 @@ body {
 }
 
 .logo-market-place {
-    background-image: url('/MarketPlace/src/imagens/market-logo.png');
+    background-image: url('../imagens/market-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
