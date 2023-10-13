@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
+
 .containerSpot{
     background-color: black;
     gap: 8px;
@@ -13,7 +18,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 2.5fr 7.5fr;
-    grid-template-rows: 3fr 7fr 3fr;
+    grid-template-rows: 3fr 7fr auto;
     grid-template-areas: 
     "header-esq main"
     "aside main"
@@ -424,7 +429,7 @@ main::-webkit-scrollbar-thumb:hover {
 
 .footer-btn{
     grid-area: footer;
-    margin-top: -100px;
+    /* margin-top: -100px; */
     width: 100%;
     border: 6px solid black;
     background-image: linear-gradient(to right, #cc2ab1, #558cb1);
