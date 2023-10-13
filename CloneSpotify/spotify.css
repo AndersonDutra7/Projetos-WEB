@@ -10,11 +10,12 @@
     background-color: black;
     gap: 8px;
     padding: 8px;
-    height: 85vh;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 2.5fr 8fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2.5fr 7.5fr;
+    grid-template-rows: 3fr 7fr 3fr;
     grid-template-areas: 
+    "header-esq main"
     "aside main"
     "footer footer"
 }
@@ -24,13 +25,12 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(20, 20, 20);
     border-radius: 10px;
-    padding: 2%;
+    padding: 2px;
     margin-bottom: 8px;
-    height: 16vh;
 }
 
 .header-esq > button{
-    width: 95%;
+    width: 90%;
     border: none;
     border-radius: 10px;
     background-color: transparent;
@@ -63,8 +63,8 @@
     background-color: rgb(20, 20, 20);
     height: 66.5vh;
     display: grid;
-    grid-template-rows: 12% 44% 44%;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 4fr;
+    grid-template-columns: 10fr;
     grid-template-areas:
     "aside-header"
     "aside-section"
@@ -125,6 +125,7 @@
 
 .aside-box2::-webkit-scrollbar {
     background-color: transparent;
+    width: 12px;
 }
 
 .aside-box2::-webkit-scrollbar-thumb {
@@ -218,50 +219,54 @@
 }
 
 main{
-    height: 84vh;
-    background-color: rgb rgb(25, 25, 25);
-    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 10fr;
+    grid-template-areas:
+        "main-header"
+        "main-playlits";
+    overflow: hidden;
     border-radius: 10px;
 }
 
 main:hover{
-    overflow-y: auto;
+    overflow: auto;
 }
 
 main::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
     background-color: transparent;
 }
 
 main::-webkit-scrollbar-thumb {
     height: 15%;
     background-color: rgba(85, 85, 85, 0.5);
-    opacity: 0.1;
   }
   
 main::-webkit-scrollbar-thumb:hover {
     background-color: rgba(151, 143, 143, 0.5);
-    opacity: 0.9;
+    /* opacity: 1; */
 }
 
 .main-header{
-    grid-area: cabecalho;
-    background-color: rgb(20, 20, 20);
-    padding: 10px;
+    grid-area: main-header;
+    background-color: rgb(17, 17, 17);
+    padding: 8px;
     border-radius: 10px 10px 0px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-header > .material-symbols-outlined{
+.main-header > div > .material-symbols-outlined{
     color: rgb(119, 134, 134);
     background-color: rgb(10, 10, 10);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 5px;
     margin: 5px;
+    display: flex;
+    float: left;
 }
 
 .material-symbols-outlined:hover{
@@ -269,13 +274,10 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .main-header-dir{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 65%;
     color: rgb(119, 134, 134);
     font-size: 15px;
     font-weight: bolder;
+    margin-right: 20px;
 }
 
 .main-header-dir > span:hover{
@@ -296,6 +298,7 @@ main::-webkit-scrollbar-thumb:hover {
 
 .main-header-dir > button:hover{
     cursor: pointer;
+    background-color: aliceblue;
     transform: scale(1.1);
 }
 
@@ -309,7 +312,7 @@ main::-webkit-scrollbar-thumb:hover {
 
 .main-playlist-header{
     background-color: rgb(25, 25, 25);
-    padding: 10px;
+    padding: 8px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -329,6 +332,7 @@ main::-webkit-scrollbar-thumb:hover {
     font-weight: bold;
     text-decoration: none;
     color: rgb(119, 134, 134);
+    margin-right: 25px;
 }
 
 .main-playlist-header-titulo:hover, .main-playlist-header-link:hover{
@@ -354,12 +358,12 @@ main::-webkit-scrollbar-thumb:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 260px;
-    width: 200px;
+    height: 250px;
+    width: 155px;
+    flex-wrap: wrap;
 }
 
 .cards > button{
-    background-color: rgb(3, 167, 3);
     border-radius: 50px;
     border: none;
     padding: 10px;
@@ -382,6 +386,15 @@ main::-webkit-scrollbar-thumb:hover {
     justify-content: center;
 }
 
+.card-play{
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 50px;
+    position: absolute;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
 .cards-titulo{
     display: flex;
     align-items: center;
@@ -400,10 +413,18 @@ main::-webkit-scrollbar-thumb:hover {
 .cards:hover{
     background-color: rgb(30, 30, 30);
     cursor: pointer;
+    position: relative;
+}
+
+.cards:hover > .card-play{
+    transition: 1s;
+    transform: translate(0px, -20px); 
+    opacity: 1;
 }
 
 .footer-btn{
     grid-area: footer;
+    margin-top: -100px;
     width: 100%;
     border: 6px solid black;
     background-image: linear-gradient(to right, #cc2ab1, #558cb1);
