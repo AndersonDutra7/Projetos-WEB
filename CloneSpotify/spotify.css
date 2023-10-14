@@ -273,7 +273,7 @@ body {
     float: left;
 }
 
-.material-symbols-outlined:hover{
+.main-header > div > .material-symbols-outlined:hover{
     cursor: not-allowed;
 }
 
@@ -476,4 +476,98 @@ body {
 
 .footer:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .aside-section{
+        height: 60vh;
+    }
+
+    .add > .material-symbols-outlined{
+        display: none;
+    }
+
+    .aside-footer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside-footer-a{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+
+    .aside-footer-button{
+        margin-left: 0px;
+    }
+
+    .main-header{
+        justify-content: left;
+    }
+
+    .main-header-dir{
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .header-esq > button{
+        display: flex;
+        align-items: center;
+        padding: 0px 2px;
+    }
+    
+    .header-esq > button > span{
+        font-size: 25px;
+    }
+
+    .header-esq > button > p{
+        font-size: 18px;
+        margin-top: -15px;
+    }
+    
+    .aside-section{
+        height: 70vh;
+    }
+
+    .aside-footer-button{
+        flex-direction: column;
+    }
+
+    .main-header-dir{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .main-header-dir > button{
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-btn-inscreva{
+        padding: 25% 5%;
+        white-space: unset;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .main-header > div > .material-symbols-outlined{
+        padding: 5px;
+        margin: 2px;
+    }
+    
+    .main-header-dir{
+        margin: 5px;
+        margin-top: -5px;
+    }
+    
+    .main-header-dir > button{
+        margin: 5px;
+        padding: 10px 10px;
+    }
+    
+
 }
