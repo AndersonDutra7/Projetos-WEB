@@ -101,7 +101,7 @@ h1, h2{
     display: flex;
     align-items: center;
     gap: 64px;
-    padding: 64pz 80pz;
+    padding: 64px 80px;
 }
 
 .duvida{
@@ -181,5 +181,57 @@ footer p a{
 #copyright a{
     text-decoration: none;
     color: yellowgreen;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #inicio{
+        padding: 20px 20px 120px 20px;
+    }
+    
+    h1, h2{
+        font-size: 25px;
+    }
+    
+    .botao{
+        padding: 16px 12px;
+    }
+    
+    .botao-transparente{
+        margin-top: 20px;
+        margin-left: -5px;
+        padding: 16px 16px;
+        display: block;
+    }
+    
+    .absolute{
+        bottom: 30px;
+    }
+    
+    #clinica{
+        gap: 24px;
+    }
+    
+    #farmacia{
+        padding: 64px 60px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    #farmacia img{
+        margin: 20px auto;
+    }
+    
+    #duvidas{
+        gap: 24px;
+        padding: 20px 30px;
+    }
+    
+    .duvida img{
+        right: 10px;
+    }
+    
+    footer{
+        gap: 60px;
+    }
 }
   
