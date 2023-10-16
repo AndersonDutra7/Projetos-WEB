@@ -231,8 +231,9 @@ footer p a{
     }
     
     footer{
-        gap: 60px;
-        font-size: 14px;
+        gap: 20px;
+        font-size: 15px;
+        padding: 24px 40px;
     }
 }
   
