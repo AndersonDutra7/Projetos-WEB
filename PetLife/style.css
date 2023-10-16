@@ -183,7 +183,7 @@ footer p a{
     color: yellowgreen;
 }
 
-@media (min-width: 769px){
+@media (max-width: 769px){
     #inicio{
         padding: 20px 20px 120px 20px;
     }
