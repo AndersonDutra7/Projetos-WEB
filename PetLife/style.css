@@ -183,16 +183,34 @@ footer p a{
     color: yellowgreen;
 }
 
-@media (max-width: 769px){
+@media screen and (max-width: 769px){
     #inicio{
-        padding: 20px 20px 120px 20px;
+        background-color: #1e72a7;
+        display: flex;
+        flex-direction: column;
+        /* gap: 100px; */
+        /* padding: 4px 0px 128px 80px; */
+        position: relative;
+        /* font-size: 10px; */
+        /* display: none; */
+    }
+
+    #inicio img{
+        width: 200px;
     }
     
-    h1, h2{
-        font-size: 25px;
-    }
+    /* h1, h2{
+        font-size: 32px;
+        font-weight: 1000;
+        margin-bottom: 0px;
+    }} */
+
+
+    /* h1, h2{
+        font-size: 10px;
+    } */
     
-    .botao{
+    /* .botao{
         padding: 16px 12px;
     }
     
@@ -234,6 +252,6 @@ footer p a{
         gap: 20px;
         font-size: 15px;
         padding: 24px 40px;
-    }
+    } */
 }
   
