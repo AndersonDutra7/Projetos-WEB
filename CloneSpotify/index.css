@@ -1,0 +1,54 @@
+@import url('"https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+
+.containerSpot{
+    /* background-color: black; */
+    gap: 8px;
+    padding: 8px;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 2.5fr 7.5fr;
+    /* grid-template-rows: 1fr 1fr 33fr; */
+    grid-template-areas: 
+    "header-esq main"
+    "aside main"
+    "footer footer"
+}
+
+.header-esq{
+    grid-area: header-esq;
+    background-color: aqua;
+    /* height: 20vh; */
+    /* width: 50vh; */
+}
+
+.aside{
+    grid: aside;
+    background-color: blueviolet;
+    /* height: 80vh; */
+}
+
+.main{
+    grid: main;
+    background-color: blue;
+    /* height: 95vh; */
+    /* width: 160vh; */
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+.footer{
+    grid: footer;
+    background-color: brown;
+}

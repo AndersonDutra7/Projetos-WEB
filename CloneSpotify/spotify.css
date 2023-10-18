@@ -15,12 +15,12 @@ body {
     background-color: black;
     gap: 8px;
     padding: 8px;
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 2.5fr 7.5fr;
-    grid-template-rows: 3fr 7fr 3fr;
+    grid-template-rows: 7.5fr 2.5fr;
     grid-template-areas: 
-    "header-esq main"
     "aside main"
     "footer footer"
 }
@@ -66,10 +66,9 @@ body {
     color: aliceblue;
     border-radius: 10px;
     background-color: rgb(20, 20, 20);
-    height: 66.5vh;
+    height: 67.8vh;
     display: grid;
-    grid-template-rows: 1fr 5fr 4fr;
-    grid-template-columns: 10fr;
+    grid-template-rows: 2.5fr 9.5fr;
     grid-template-areas:
     "aside-header"
     "aside-section"
@@ -120,7 +119,8 @@ body {
 }
 
 .aside-box2{
-    height: 30vh;
+    height: 27vh;
+    overflow: hidden;
 }
 
 .aside-box2:hover{
@@ -225,10 +225,11 @@ body {
 
 .main{
     display: grid;
-    grid-template-columns: 10fr;
-    grid-template-rows: 10fr;
+    grid-template-columns: 2.5fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas:
         "main-header"
+        "main-playlits"
         "main-playlits";
     overflow: hidden;
     border-radius: 10px;
@@ -427,7 +428,7 @@ body {
 
 .footer-btn{
     grid-area: footer;
-    margin-top: -2%;
+    margin-top: -13.5vh;
     width: 100%;
     border: 6px solid black;
     background-image: linear-gradient(to right, #cc2ab1, #558cb1);
@@ -438,6 +439,7 @@ body {
     align-items: left;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .footer-texto{
@@ -478,9 +480,14 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media(max-width: 768px){
+    .containerSpot{
+        display: block;
+        width: 100%;
+    }
+
     .aside-section{
-        height: 60vh;
+        
     }
 
     .add > .material-symbols-outlined{
