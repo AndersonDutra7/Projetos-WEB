@@ -35,9 +35,28 @@ const Header = () => {
             </SheetTrigger>
 
             <SheetContent side="left">
-                <SheetHeader className="text-left text-lg font-semibold">Menu
+                <SheetHeader className="text-left text-lg font-semibold">
+                    Menu
                 </SheetHeader>
-                <Button variant="outline" className="w-full justify-start">Fazer Login</Button> 
+
+                <div className="mt-2 flex flex-col gap-2">
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                        <LogInIcon size={16}/>
+                        Fazer Login
+                    </Button>
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                        <HomeIcon size={16}/>
+                        Início
+                    </Button>
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                        <PercentIcon size={16}/>
+                        Ofertas
+                    </Button> 
+                    <Button variant="outline" className="w-full justify-start gap-2">
+                        <ListOrderedIcon size={16}/>
+                        Catálogo
+                    </Button>
+                </div>
             </SheetContent>
         </Sheet>
 
