@@ -20,10 +20,10 @@ async function getApi(filme, pagina) {
         data.Search.forEach((filme) => {
             const posterUrl = filme.Poster !== "N/A" ? filme.Poster : 'imagens/semImagem.PNG';
             filmeInfo.innerHTML += `
-                <div class="movie">
+                <div class="filmes">
                     <div class="movie-header">
-                        <h2 class="movie-h2">${filme.Title}</h2>
-                        <h3 class="movie-h3">Lançamento: ${filme.Year}</h3>
+                        <h2 class="filmes-h2">${filme.Title}</h2>
+                        <h3 class="filmes-h3">Lançamento: ${filme.Year}</h3>
                     </div>
                     <p><img src="${posterUrl}" alt="${filme.Title}"></p>
                 </div>
