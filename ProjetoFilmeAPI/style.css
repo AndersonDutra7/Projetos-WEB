@@ -68,6 +68,11 @@ body {
     background-color: aqua;
 }
 
+.btn-buscar:active, .prev-page:active, .next-page:active {
+    background-color: rgb(58, 146, 134)
+}
+  
+
 .filme-info, .paginacao{
     display: flex;
     justify-content: center;
