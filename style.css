@@ -31,10 +31,21 @@ body{
     transition: .5s;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px rgba(107, 107, 207, 0.363);
+button:hover{
+    box-shadow: 0px 0px 20px rgb(107, 107, 207);
+    transform: scale(1.02);
     transform: scale(1.09s);
     background-color: aliceblue;
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo spam{
+    color: rgb(107, 107, 207);
 }
 
 /*ESTILO HEADER*/
@@ -56,6 +67,14 @@ header img{
     height: auto;
     border-radius: 400px 200px 150px 150px;
     background-color: rgb(107, 107, 207);
+    transition: .5s;
+}
+
+header img:hover{
+    box-shadow: 0px 0px 20px rgb(107, 107, 207);
+    transform: scale(1.02);
+    transform: scale(1.09s);
+    background-color: aliceblue;
 }
 
 header a{
@@ -67,7 +86,7 @@ header a{
 
 header a:hover{
     color: rgb(253, 252, 252);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 header nav ul{
@@ -77,6 +96,11 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+    transition: .3s;
+}
+
+header nav ul li:hover{
+    transform: scale(1.09);
 }
 
 /*ESTILO DO TOPO DO SITE*/
@@ -98,7 +122,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1 spam{
-    color: rgb(107, 107, 207);;
+    color: rgb(107, 107, 207);
 }
 
 @keyframes incandescente {
@@ -131,7 +155,81 @@ section.topo-do-site .flex{
         top: 0;
     }
     100% {
-        top30px
+        top: 20px;
     }
+}
+
+/*ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: aliceblue;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(240, 248, 255, 0.486);
+}
+
+.especialidades-box i{
+    font-size: 70px;
+    color: rgb(107, 107, 207);
+}
+
+.especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/*SOBRE*/
+section.sobre{
+    padding: 40px 4%;
+}
+
+.sobre .txt-sobre{
+    color: aliceblue;
+}
+
+section.sobre .flex{
+    align-items: center;
+    padding: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre span{
+    color: rgb(107, 107, 207);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(107, 107, 207);
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
 }
 
