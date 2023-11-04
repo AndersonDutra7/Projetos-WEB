@@ -48,6 +48,18 @@ h2.titulo span{
     color: rgb(107, 107, 207);
 }
 
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(107, 107, 207);
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
 /*ESTILO HEADER*/
 header{
     padding: 40PX 4%;
@@ -146,9 +158,9 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site p{
+    font-size: 24px;
     color: aliceblue;
     margin: 40px;
-
 }
 
 @keyframes flutuar{
@@ -221,18 +233,6 @@ section.sobre .flex{
 .sobre .txt-sobre p{
     margin: 20px 0;
     text-align: justify;
-}
-
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(107, 107, 207);
-    cursor: pointer;
-    margin: 0 8px;
-    transition: .2s;
 }
 
 /*PORTFOLIO*/
@@ -336,4 +336,48 @@ form .btn-enviar input:hover{
     transform: scale(1.02);
     transform: scale(1.09s);
     background-color: aliceblue;
+}
+
+
+/* FOOTER */
+footer{
+    padding: 20px 4%;
+    box-shadow: 0px 0px 20px rgb(107, 107, 207);
+}
+
+footer img{
+    max-width: 100px;
+    max-height: 100px;
+    box-shadow: none;
+    filter: sepia(50%) grayscale(30%) contrast(90%) brightness(80%);
+}
+
+
+footer .flex{
+    justify-content: space-evenly;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid rgb(107, 107, 207);
+}
+
+footer .line-footer p{
+    font-size: 18px;
+    color: rgb(107, 107, 207);
+    display: flex;
+    justify-content: center;
+}
+
+footer .line-footer p i{
+    font-size: 30px;
+}
+
+footer .line-footer p i a{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(107, 107, 207);
 }
