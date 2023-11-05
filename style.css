@@ -381,3 +381,155 @@ footer .line-footer p i a{
     text-decoration: none;
     color: rgb(107, 107, 207);
 }
+
+@media screen and (max-width: 1020px){
+    /* GERAL */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABECALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    .topo-do-site h1{
+        font-size: 34px;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    section.especialidades h2{
+        margin-bottom: 50px;
+    }
+
+    .especialidades .especialidades-box{
+        width: 100%;
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    .especialidades .especialidades-box p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    /* SOBRE */
+    section.sobre{
+        padding: 10px 0%;
+    }
+
+    .img-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -100px;
+    }
+
+    .img-sobre img{
+        width: 140%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .sobre p{
+        font-size: 20px;
+    }
+
+    section .portfolio{
+        padding: 80px 8%;
+    }
+
+    section.portfolio .flex{
+        gap: 50px;
+    }
+
+    /* PORTFOLIO */
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* RODAPE */
+    footer .flex{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .topo-do-site h1{
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .topo-do-site p{
+        text-align: center;
+    }
+
+    .especialidades .especialidades-box p{
+        font-size: 24px;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .sobre p{
+        font-size: 24px;
+    }
+
+    /* RODAPE */
+    footer .flex{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .line-footer .btn-social a button{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .btn-social button{
+        width: 50px;
+        height: 50px;
+    }
+    footer .line-footer p{
+        text-align: center;
+    }
+        
+    footer .line-footer p i{
+        font-size: 40px;
+    }
+}
