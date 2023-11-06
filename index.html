@@ -113,20 +113,26 @@
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span> </h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(imagens/WhatsApp\ Image\ 2023-09-29\ at\ 16.36.23.jpeg);"><div class="overlay">Projeto 01</div></div>
-                    <div class="img-port" style="background-image: url(imagens/WhatsApp\ Image\ 2023-09-29\ at\ 16.36.23.jpeg);"><div class="overlay">Projeto 02</div></div>
-                    <div class="img-port" style="background-image: url(imagens/WhatsApp\ Image\ 2023-09-29\ at\ 16.36.23.jpeg);"><div class="overlay">Projeto 03</div></div>
+                    <a href="ProjetoTravel/index.html" target="_blank">
+                        <div class="img-port" style="background-image: url(imagens/travel.PNG);"><div class="overlay">WebSite Travel</div></div>
+                    </a>
+                    <a href="OnePieceDevEmDobro/src/index.html" target="_blank">
+                        <div class="img-port" style="background-image: url(imagens/onePiece.PNG);"><div class="overlay">Landing Page One Piece</div></div>
+                    </a>
+                    <a href="ProjetoFilmeAPI/" target="_blank">
+                        <div class="img-port" style="background-image: url(imagens/buscadorFilmes.PNG);"><div class="overlay">Buscador de Filmes</div></div>
+                    </a>
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
         <section id="formulario" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-                <form action="">
-                    <input type="text" placeholder="Seu nome:" required>
-                    <input type="text" placeholder="Seu e-mail:" required>
-                    <input type="text" placeholder="Seu fone:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form method="post" action="form.php">
+                    <input type="text" id="input-nome" name="nome-contato" placeholder="Seu nome:" required >
+                    <input type="text" id="input-mail" name="email-contato" placeholder="Seu e-mail:" required>
+                    <input type="text" id="input-fone" name="fone-contato" placeholder="Seu fone:">
+                    <textarea name="" id="input-msg" name="msg-contato" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
                     </div>
