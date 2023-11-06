@@ -7,12 +7,16 @@
 
 header {
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 4%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     border-bottom: 3px solid palevioletred;
 }
 
 .navbar {
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -29,6 +33,7 @@ header {
 .navbar-items {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 input[type="text"] {
@@ -67,7 +72,7 @@ input[type="text"]:hover {
 
 .btn-anunciar {
     margin: 0px;
-    /* padding: 10px 50px; */
+    padding: 10px 50px;
     background-color: aliceblue;
     color: #ccc;
     font-size: 18px;
@@ -79,4 +84,40 @@ input[type="text"]:hover {
 .btn-anunciar:hover {
     background-color: rgb(238, 159, 185);
     color: rgb(61, 60, 60);
+}
+
+.main-cards{
+    padding: 40px 4%;
+    gap: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-content{
+    max-width: 500px;
+    background-color: rgb(238, 159, 185);
+    border: 3px solid rgb(238, 159, 185);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-img img{
+    width: 250px;
+    height: 200px;
+}
+
+.card-content h2{
+    font-size: 28px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+}
+
+.card-content p{
+    background-color: aqua;
+    font-size: 16px;
+    justify-content: left;
 }
