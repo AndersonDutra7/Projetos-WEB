@@ -13,7 +13,6 @@
         echo("E-mail enviado com sucesso!");
     } else {
         echo("Houve um erro ao enviar e-mail!");
-    }
+    };
 
-}
 ?>
