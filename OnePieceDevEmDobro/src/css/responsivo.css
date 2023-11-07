@@ -40,6 +40,7 @@
 @media (max-width: 450px) {
     main .personagem .imagem {
         height: auto;
+        position: fixed;
     }
 
     .conteudo .logo {
@@ -96,8 +97,27 @@
         top: 250px;
     }
 
-    .botoes {
-        align-items: center;
-        top: 300px;
+}
+
+@media (max-width: 360px) and (max-height: 596px) {
+    body{
+        overflow: auto;
+    }
+
+    main .personagem{
+        height: 150vh;
+    }
+
+    .conteudo .nome-personagem {
+        top: 150px;
+    }
+
+    .conteudo .descricao{
+        top: 220px;
+        font-size: 15px;
+    }
+
+    .botoes{
+        top: 0px;
     }
 }
