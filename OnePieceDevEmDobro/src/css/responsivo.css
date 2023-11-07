@@ -74,7 +74,7 @@
 }
 
 /* Redmi Note 8 (360 x 596) */
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
     main .personagem .imagem {
         height: auto;
         filter: brightness(75%);
@@ -83,7 +83,7 @@
     .conteudo .logo {
         width: 140px;
         height: 70px;
-        top: 10px;
+        top: 0px;
         filter: saturate(350%);
     }
 
@@ -99,7 +99,7 @@
 
 }
 
-@media (max-height: 600px) {
+/*@media (max-height: 600px) {
     .conteudo .logo{
         top: 0;
         left: 20px;
@@ -117,5 +117,5 @@
 
     .botoes{
         top: -210px;
-    } */
-}
+    }
+}*/
