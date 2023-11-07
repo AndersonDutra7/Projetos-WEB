@@ -95,9 +95,8 @@
 
     .conteudo .descricao{
         width: 100%;
-        padding: 0px 20px 0 20px;
+        padding: 20px 20px 0 20px;
         background-color: rgb(0, 0, 0);
-        background-color: aqua;
         left: 0;
     }
 
