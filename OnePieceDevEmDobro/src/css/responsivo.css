@@ -108,6 +108,7 @@
     .conteudo .descricao{
         text-align: left;
         font-size: 16px;
+        background-color: aqua;
     }
 
     .botoes{
