@@ -37,7 +37,7 @@
     }
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     main .personagem .imagem {
         height: auto;
         position: fixed;
@@ -65,16 +65,16 @@
 
     .botoes {
         padding: 20px;
-        top: 0%;
+        top: 0px;
     }
 
     .botoes .botao img {
         max-width: 50px;
     }
-}
+} */
 
 /* Redmi Note 8 (360 x 596) */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     main .personagem .imagem {
         height: auto;
         filter: brightness(75%);
@@ -117,5 +117,5 @@
 
     .botoes{
         top: -210px;
-    }
+    } */
 }
