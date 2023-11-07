@@ -94,3 +94,24 @@
     }
 
 }
+
+@media (max-width: 320px) {
+    .conteudo .logo {
+        width: 40%;
+    }
+
+    .conteudo .nome-personagem {
+        top: 120px;
+        font-size: 20px;
+    }
+
+    .conteudo .descricao{
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .botoes{
+        top: -15px;
+    }
+
+}
