@@ -2,69 +2,85 @@ document.getElementById("btn-login").addEventListener("click", function() {
     window.location.href = "html/login.html";
 });
 
+/*Scripts registro.html*/
+
 const registroForm = document.getElementById('login-form');
+const nomeUsuario = document.getElementById('input-nome').value;
+const emailUsuario = document.getElementById('input-email').value;
+const senhaUsuario = document.getElementById('input-senha').value;
+const confirmarSenhaUsuario = document.getElementById('input-confirmSenha').value;
 
-registroForm.addEventListener('submit', function (event) {
+registroForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
-    const confirmarSenha = document.getElementById('confirmarSenha').value;
-
-    if (senha !== confirmarSenha) {
-        alert('As senhas não coincidem');
-        return;
-    }
-
-    const registroUsuario = {
-        nome: nome,
-        email: email,
-        senha: senha
-    };
-
-    fetch('http://localhost:8081/swagger-ui/index.html#/auth/register', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(registroUsuario)
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Registro bem-sucedido! Você pode fazer login agora.');
-                window.location.href = "html/login.html";
-        } else {
-            alert('Falha no registro. Tente novamente mais tarde.');
-        }
-    })
-    .catch(error => {
-        console.error('Erro ao enviar a solicitação POST:', error);
-    });
 });
 
-const loginForm = document.getElementById('login-form');
-        loginForm.addEventListener('submit', function (event) {
-        event.preventDefault();
+function checkInputs() {
+    const nomeUsuarioValor = nomeUsuario.value;
+    const emailUsuarioValor = emailUsuario.value;
+    const senhaUsuarioValor = senhaUsuario.value;
+    const confirmarSenhaUsuarioValor = confirmarSenhaUsuario.value;
 
-        const email = document.getElementById('email').value;
-        const senha = document.getElementById('senha').value;
+  if (nomeUsuarioValor === "") {
+    setErrorFor(nomeUsuario, "O nome de usuário é obrigatório.");
+  } else {
+    setSuccessFor(nomeUsuario);
+  }
 
-        const formData = new FormData();
-        formData.append('email', email);
-        formData.append('senha', senha);
+  if (emailUsuarioValor === "") {
+    setErrorFor(emailUsuario, "O email é obrigatório.");
+  } else if (!checkEmail(emailUsuarioValor)) {
+    setErrorFor(emailUsuario, "Por favor, insira um email válido.");
+  } else {
+    setSuccessFor(emailUsuario);
+  }
 
-        fetch('URL_DA_SUA_API_AQUI', {
-            method: 'POST',
-            body: formData
-            })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Resposta da API:', data);
-                // Faça algo com a resposta da API, como redirecionar o usuário ou exibir uma mensagem
-        })
-        .catch(error => {
-            console.error('Erro ao enviar a solicitação POST:', error);
-    });
-});
+  if (senhaUsuarioValor === "") {
+    setErrorFor(senhaUsuario, "A senha é obrigatória.");
+  } else if (senhaUsuarioValor.length < 7) {
+    setErrorFor(senhaUsuario, "A senha precisa ter no mínimo 7 caracteres.");
+  } else {
+    setSuccessFor(senhaUsuario);
+  }
 
+  if (confirmarSenhaUsuarioValor === "") {
+    setErrorFor(confirmarSenhaUsuario, "A confirmação de senha é obrigatória.");
+  } else if (confirmarSenhaUsuarioValor !== senhaUsuarioValor) {
+    setErrorFor(conferirSenha, "As senhas não conferem.");
+  } else {
+    setSuccessFor(conferirSenha);
+  }
 
+  const formControls = form.querySelectorAll(".form-control");
 
+  const formIsValid = [...formControls].every((formControl) => {
+    return formControl.className === "form-control success";
+  });
+
+  if (formIsValid) {
+    console.log("O formulário está 100% válido!");
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+
+  // Adiciona a mensagem de erro
+  small.innerText = message;
+
+  // Adiciona a classe de erro
+  formControl.className = "form-control error";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+
+  // Adicionar a classe de sucesso
+  formControl.className = "form-control success";
+}
+
+function checkEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}

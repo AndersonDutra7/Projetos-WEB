@@ -14,7 +14,8 @@ body {
 }
 
 .login-container {
-    width: 300px;
+    width: 400px;
+    max-width: 100%;
     margin: 3%;
     padding: 3%;
     border-radius: 5px;
@@ -24,6 +25,7 @@ body {
     justify-content: space-around;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
     background-color: white;
+    overflow: hidden;
 }
 
 .logo-market-place {
@@ -44,12 +46,13 @@ body {
 }
 
 .login-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 3px solid palevioletred;
 }
 
-.login-form > h3{
+.login-form h3{
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -58,7 +61,7 @@ body {
     margin-bottom: 5px;
 }
 
-.login-form > p{
+.login-form p{
     display: flex;
     justify-content: center;
     font-size: 10px;
@@ -66,12 +69,31 @@ body {
     margin-bottom: 5px;
 }
 
-.login-input {
+.form-control{
+    position: relative;
+}
+
+.form-control input {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.form-control i{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    top: 40px;
+    left: 1%;
+    visibility: hidden;
 }
 
 .btn-login {
@@ -103,3 +125,27 @@ body {
     text-decoration: underline;
     color: #f8039a;
 }
+
+/* Error and Success */
+.form-control.success input {
+    border-color: #2ecc71;
+  }
+  
+  .form-control.error input {
+    border-color: #e74c3c;
+  }
+  
+  .form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+  }
+  
+  .form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+  }
