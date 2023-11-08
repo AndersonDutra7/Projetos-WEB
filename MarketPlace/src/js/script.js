@@ -1,86 +1,52 @@
-document.getElementById("btn-login").addEventListener("click", function() {
-    window.location.href = "html/login.html";
-});
+// document.getElementById("btn-login").addEventListener("click", function() {
+//     window.location.href = "html/login.html";
+// });
 
 /*Scripts registro.html*/
+let form = document.getElementById("login-form");
 
-const registroForm = document.getElementById('login-form');
-const nomeUsuario = document.getElementById('input-nome').value;
-const emailUsuario = document.getElementById('input-email').value;
-const senhaUsuario = document.getElementById('input-senha').value;
-const confirmarSenhaUsuario = document.getElementById('input-confirmSenha').value;
-
-registroForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-});
-
-function checkInputs() {
-    const nomeUsuarioValor = nomeUsuario.value;
-    const emailUsuarioValor = emailUsuario.value;
-    const senhaUsuarioValor = senhaUsuario.value;
-    const confirmarSenhaUsuarioValor = confirmarSenhaUsuario.value;
-
-  if (nomeUsuarioValor === "") {
-    setErrorFor(nomeUsuario, "O nome de usuário é obrigatório.");
-  } else {
-    setSuccessFor(nomeUsuario);
-  }
-
-  if (emailUsuarioValor === "") {
-    setErrorFor(emailUsuario, "O email é obrigatório.");
-  } else if (!checkEmail(emailUsuarioValor)) {
-    setErrorFor(emailUsuario, "Por favor, insira um email válido.");
-  } else {
-    setSuccessFor(emailUsuario);
-  }
-
-  if (senhaUsuarioValor === "") {
-    setErrorFor(senhaUsuario, "A senha é obrigatória.");
-  } else if (senhaUsuarioValor.length < 7) {
-    setErrorFor(senhaUsuario, "A senha precisa ter no mínimo 7 caracteres.");
-  } else {
-    setSuccessFor(senhaUsuario);
-  }
-
-  if (confirmarSenhaUsuarioValor === "") {
-    setErrorFor(confirmarSenhaUsuario, "A confirmação de senha é obrigatória.");
-  } else if (confirmarSenhaUsuarioValor !== senhaUsuarioValor) {
-    setErrorFor(conferirSenha, "As senhas não conferem.");
-  } else {
-    setSuccessFor(conferirSenha);
-  }
-
-  const formControls = form.querySelectorAll(".form-control");
-
-  const formIsValid = [...formControls].every((formControl) => {
-    return formControl.className === "form-control success";
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  
+  let nome = document.getElementById("input-nome").value;
+  let email = document.getElementById("input-email").value;
+  let senha = document.getElementById("input-senha").value;
+  let confirmSenha = document.getElementById("input-confirm-senha").value;
+  
+  let userData = JSON.stringify({
+    nome: nome,
+    email: email,
+    senha: senha,
+    confirmSenha: confirmSenha
   });
 
-  if (formIsValid) {
-    console.log("O formulário está 100% válido!");
+  fetch('http://localhost:8081/swagger-ui/index.html#/auth/register', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(userData)
+})
+.then(response => {
+  if (response.ok) {
+    return response.json();
+  } else {
+    throw new Error('Erro na requisição POST: ' + response.statusText);
   }
-}
+})
+.then(data => {
+  // Lida com a resposta da API, por exemplo, exibindo uma mensagem de sucesso ou erro
+  if (data.success) {
+    alert("Usuário cadastrado com sucesso!");
+    // Redireciona para a página de login ou faz outra ação necessária
+  } else {
+    alert("Erro ao cadastrar o usuário. Tente novamente.");
+  }
+})
+.catch(error => {
+  console.error("Erro na requisição POST:", error);
+  // Lida com erros na requisição
+});
+});
 
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-
-  // Adiciona a mensagem de erro
-  small.innerText = message;
-
-  // Adiciona a classe de erro
-  formControl.className = "form-control error";
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-
-  // Adicionar a classe de sucesso
-  formControl.className = "form-control success";
-}
-
-function checkEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
-}
+// console.log(userData);
