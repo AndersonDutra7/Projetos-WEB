@@ -27,3 +27,8 @@ const mascaraTelefone = (valor) => {
     valor = valor.replace(/(\d)(\d{4})$/, "$1-$2");
     tel.value = valor;
 }
+
+function flipElement() {
+    const button = document.querySelector('.');
+    button.classList.toggle('flipped');
+  }

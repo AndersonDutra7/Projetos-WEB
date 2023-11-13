@@ -46,6 +46,31 @@ h2.titulo{
 
 h2.titulo span{
     color: rgb(107, 107, 207);
+    position: relative;
+
+}
+
+h2.titulo span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid rgb(107, 107, 207);
+    right: -10px;
+    opacity: 1;
+    animation: digitar 20s steps(15) infinite;
+    width: calc(100% + 10px);
+    background-color: black;    
+}
+
+@keyframes digitar {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60% , 65%, 80%, 85%{
+        width: calc(100% + 10px);
+    }
+    
 }
 
 .btn-social button{
@@ -341,6 +366,10 @@ section.portfolio .flex{
 .img-port:hover{
     background-position: 100% 100%;
 }
+
+/* .img-port.flipped{
+    transform: rotateY(180deg);
+} */
 
 .overlay{
     position: absolute;
