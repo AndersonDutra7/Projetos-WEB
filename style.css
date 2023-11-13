@@ -205,6 +205,18 @@ section.topo-do-site .flex{
     color: rgb(107, 107, 207);
 }
 
+.topo-do-site .sucess-titulo{
+    box-shadow: 0 0 20px rgba(240, 248, 255, 0.486);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 4%;
+}
+
+.topo-do-site .sucess-titulo button{
+    margin-top: 40px;
+}
+
 @keyframes incandescente {
     0% { opacity: 0.9; }
     100% { opacity: 0.5; }
