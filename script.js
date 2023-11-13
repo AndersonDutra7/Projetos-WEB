@@ -16,7 +16,7 @@ overlay.addEventListener('click', ()=>{
 })
 
 /* FUNCAO ENVIO FORMULARIO */
-let form = document.getElementById("formulario");
+const form = document.getElementById("formulario");
 let nomeContato = document.getElementById("input-nome");
 let emailContato = document.getElementById("input-mail");
 let foneContato = document.getElementById("input-fone");
