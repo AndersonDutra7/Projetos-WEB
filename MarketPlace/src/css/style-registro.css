@@ -77,21 +77,22 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    /* display: block; */
 }
 
 .form-control i{
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: 22%;
+    right: 3%;
     visibility: hidden;
 }
 
 .form-control small{
     position: absolute;
-    top: 40px;
+    top: 70%;
     left: 1%;
     visibility: hidden;
 }
@@ -135,12 +136,12 @@ body {
     border-color: #e74c3c;
   }
   
-  .form-control.success i.fa-check-circle {
+  .form-control.success i.bi.bi-check-circle {
     color: #2ecc71;
     visibility: visible;
   }
   
-  .form-control.error i.fa-exclamation-circle {
+  .form-control.error i.bi.bi-exclamation-circle {
     color: #e74c3c;
     visibility: visible;
   }
