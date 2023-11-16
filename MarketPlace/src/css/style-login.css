@@ -14,8 +14,9 @@ body {
 }
 
 .login-container {
-    width: 300px;
-    margin: 10%;
+    width: 400px;
+    max-width: 100%;
+    margin: 3%;
     padding: 3%;
     border-radius: 5px;
     display: flex;
@@ -36,6 +37,7 @@ body {
 }
 
 .login-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 3px solid palevioletred;
@@ -64,17 +66,17 @@ body {
     color: #ccc;
 }
 
-.login-registro {
+.login-register {
     margin-top: 10px;
     font-size: 14px;
 }
 
-.login-registro a {
+.login-register a {
     text-decoration: none;
     color: #6d2f55;
 }
 
-.login-registro a:hover {
+.login-register a:hover {
     text-decoration: underline;
     color: #f8039a;
 }

@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/style-login.css">
+    <script defer type="module" src="../js/login.js"></script>
 </head>
 <body>
     <div class="login-container">
         <div class="logo-market-place">
         </div>
-        <form class="login-form">
-            <input type="email" placeholder="Email" class="login-input">
-            <input type="password" placeholder="Senha" class="login-input">
+        <form class="login-form" id="login-form">
+            <input type="text" placeholder="Email" class="login-input" id="input-email">
+            <small>Mensagem de erro</small>
+            <input type="password" placeholder="Senha" class="login-input" id="input-senha">
+            <small>Mensagem de erro</small>
             <button type="submit" class="btn-login" id="btn-login">Acessar</button>
         </form>
-        <p class="login-registro">Não tem uma conta? <a href="registro.html">Cadastre-se</a></p>
+        <p class="login-register">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
     </div>
 </body>
 </html>
