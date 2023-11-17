@@ -12,7 +12,7 @@ form.addEventListener("submit", async (event) => {
 
     if (!emailValue || !passwordValue) {
         if (!emailValue) setErrorFor(email,'O campo de email é obrigatório.');
-        if (!passwordValue) setErrorFor(password, 'O campo de senha é obrigatório.');
+        if (!passwordValue) setErrorFor(senha, 'O campo de senha é obrigatório.');
     } else {
         let loginData = {
             email: email.value,

@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraFlix</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="page-title">
-          Aluraflix
-        </h1>
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-      </div>
-      <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-      </a>
-      <script>
-        var listaFilmes = ["https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0554fwGDNd3p46TRrGEvl-cc0zDmJW2hAVSeUw29fz5sZcmRu", "https://br.web.img3.acsta.net/c_310_420/pictures/16/10/19/01/57/552532.jpg", "https://images.justwatch.com/poster/178293260/s592/spider-man-into-the-spider-verse", "https://upload.wikimedia.org/wikipedia/pt/c/c1/The_Matrix_Poster.jpg", "https://upload.wikimedia.org/wikipedia/pt/thumb/6/63/O_Homem_que_Copiava.jpg/200px-O_Homem_que_Copiava.jpg"];
+<html>
 
-        for (const filme of listaFilmes) {
-            document.write("<img class='capa-filme' src='" + filme + "'>");
-        }
-    </script>
+<head>
+  <title>
+    Imersão Dev
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Aluraflix
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    <p class="page-subtitle">
+      Qual seu filme favorito?
+    </p>
+    <div class="form-wrapper">
+      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+      <button onClick="adicionarFilme()">Adicionar Filme</button>
+    </div>
+  </div>
+  <div id="listaFilmes"></div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
 </body>
+
+</html>
