@@ -6,7 +6,7 @@ let confirmSenha = document.getElementById("input-confirm-senha");
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    checkInputs();
+    await checkInputs();
 });
 
 async function checkInputs() {
@@ -127,5 +127,3 @@ function setErrorFor(input, message) {
     formControl.classList.add("error");
     small.innerText = message;
 }
-
-export {setErrorFor};

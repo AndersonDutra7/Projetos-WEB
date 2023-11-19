@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/style-login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script defer type="module" src="../js/login.js"></script>
 </head>
 <body>
     <div class="login-container">
-        <div class="logo-market-place">
+        <div class="logo-market-place" alt="Logo do Market Place">
         </div>
         <form class="login-form" id="login-form">
-            <input type="text" placeholder="Email" class="login-input" id="input-email">
-            <small>Mensagem de erro</small>
-            <input type="password" placeholder="Senha" class="login-input" id="input-senha">
-            <small>Mensagem de erro</small>
+            <div class="form-control">
+                <input type="text" placeholder="Email" class="login-input" id="input-email" autocomplete="current-password">
+                <i class="bi bi-exclamation-circle"></i>
+                <i class="bi bi-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">    
+                <input type="password" placeholder="Senha" class="login-input" id="input-senha" autocomplete="current-password">
+                <i class="bi bi-exclamation-circle"></i>
+                <i class="bi bi-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
             <button type="submit" class="btn-login" id="btn-login">Acessar</button>
         </form>
         <p class="login-register">Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
