@@ -11,15 +11,12 @@
     font-family: Arial, sans-serif;
 }
 
-.interface{
-    margin: 0 auto;
-}
-
 .flex{
     display: flex;
     justify-content: center;
 }
 
+/* Estilos Header*/
 header {
     color: #fff;
     padding: 20px 4%;
@@ -103,7 +100,87 @@ input[type="text"]:hover {
     color: rgb(61, 60, 60);
 }
 
-.main-cards{
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    color: #ccc;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+}
+
+/*Estilos Carroussel*/
+section.carroussel{
+    margin: 2% auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+.carroussel-content{
+    width: 400%;
+    display: flex;
+}
+
+.carroussel input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    text-align: center;
+    transition: 1s;
+    position: relative;
+}
+
+.slide-box img{
+    width: 100%;
+    height: 300px;
+}
+
+.nav-carroussel-auto, .nav-carroussel-manual{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 310px;
+}
+
+.nav-carroussel-manual .btn-manual, .nav-carroussel-auto div{
+    border: 1px solid palevioletred;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-carroussel-manual .btn-manual:not(:last-child), .nav-carroussel-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-carroussel-manual .btn-manual:hover{
+    background-color: palevioletred;
+}
+
+#radio1:checked ~ .nav-carroussel-auto .auto-btn1, #radio2:checked ~ .nav-carroussel-auto .auto-btn2, #radio3:checked ~ .nav-carroussel-auto .auto-btn3{
+    background-color: palevioletred;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+/* Esilos Main Cards*/
+section.main-cards{
     padding: 40px 4%;
     gap: 12px;
     display: flex;
@@ -116,27 +193,31 @@ input[type="text"]:hover {
     max-width: 500px;
     background-color: rgb(238, 159, 185);
     border: 3px solid rgb(238, 159, 185);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
     display: flex;
     flex-direction: column;
-    text-align: left;
 }
 
 .card-img img{
     width: 250px;
     height: 200px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-content h2{
     font-size: 28px;
+    font-family: 'Comic Sans MS', cursive;
     margin: 10px auto;
-    margin-bottom: 40px;
+    padding: 1%;
 }
 
 .card-content p{
-    background-color: aqua;
+    padding: 1% 0;
+    background-color: rgb(247, 210, 222);
     font-size: 16px;
     justify-content: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos Footer */
@@ -160,7 +241,6 @@ footer .flex{
     margin-bottom: 2%;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .links-footer a{
