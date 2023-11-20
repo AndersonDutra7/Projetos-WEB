@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+
+
+
+/* Estilos Gerais */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+.interface{
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -41,11 +56,13 @@ input[type="text"] {
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 
 input[type="text"]:hover {
-
+    border: none;
     border-bottom: 3px solid palevioletred;
+    border-left: 3px solid palevioletred;
 }
 
 .navbar-items > .btn-login, .navbar > .btn-anunciar{
@@ -121,3 +138,36 @@ input[type="text"]:hover {
     font-size: 16px;
     justify-content: left;
 }
+
+/* Estilos Footer */
+footer{
+    margin: 0 20px;
+    padding: 20px 4%;
+    border-top: 3px solid palevioletred;
+}
+
+footer .flex{
+    justify-content: space-evenly;
+}
+
+.flex .links-footer{
+    padding: 2% 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-footer p{
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.links-footer a{
+    color: palevioletred;
+    margin-bottom: 2%;
+    font-weight: 400;
+    font-family: 'Comic Sans MS', cursive;
+    text-decoration: none;
+}
+

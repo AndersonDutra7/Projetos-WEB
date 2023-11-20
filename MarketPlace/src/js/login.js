@@ -44,6 +44,7 @@ async function checkInputs() {
                 break;
             case 401:
                 alert(response.message);
+                await refreshToken();
                 break;
             case 200:
                 const token = response.token;
@@ -64,7 +65,7 @@ function checkEmail() {
         setErrorFor(email, "O email é obrigatório.");
     } else if (!emailValor.includes('@')) {
         setErrorFor(email, "O email deve conter o caractere '@'.");
-    } else if (!emailRegex.test(emailValor)){
+    } else if (!emailRegex.test(emailValor)) {
         setErrorFor(email, "Formato de email inválido.");
     } else {
         setSuccessFor(email);
@@ -102,4 +103,34 @@ function setErrorFor(input, message) {
     formControl.classList.remove("success");
     formControl.classList.add("error");
     small.innerText = message;
+}
+
+async function refreshToken() {
+    const refreshToken = localStorage.getItem('refreshToken');
+
+    if (!refreshToken) {
+        alert("Sua sessão expirou, faça login novamente.");
+        window.location.href = "../login.html";
+        return;
+    }
+
+    const refreshRequest = await fetch('http://localhost:8081/auth/refresh', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${refreshToken}`
+        },
+    });
+
+    if (refreshRequest.ok) {
+        const newAccessToken = await refreshRequest.json().then(data => data.accessToken);
+        localStorage.setItem('authToken', newAccessToken);
+        // Continue a execução após renovar o token
+        alert("Token renovado com sucesso. Continue a operação.");
+    } else {
+        // Manipule erros, como revogar o refresh token se inválido
+        alert("Erro ao renovar o token. Faça login novamente.");
+        // Redirecionar para a página de login
+        window.location.href = "../login.html";
+    }
 }
