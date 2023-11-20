@@ -103,30 +103,3 @@ function setErrorFor(input, message) {
     formControl.classList.add("error");
     small.innerText = message;
 }
-
-function checkToken(token){
-    // Salva o token no localStorage
-    localStorage.setItem('authToken', token);
-
-    // Outras ações que você pode realizar com o token, se necessário
-    // Por exemplo, decodificar o token para obter informações do usuário
-    const decodedToken = decodeToken(token);
-    console.log('Token Decodificado:', decodedToken);
-}
-
-function decodeToken(token) {
-    // Aqui você pode usar uma biblioteca para decodificar o token JWT
-    // Exemplo usando a biblioteca 'jsonwebtoken'
-    // Certifique-se de incluir a biblioteca no seu projeto (por meio de npm ou script no HTML)
-
-    // const jwt = require('jsonwebtoken'); // Para uso no Node.js
-    // OU
-    // Inclua a biblioteca diretamente no HTML:
-    // <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonwebtoken/8.5.1/jsonwebtoken.min.js"></script>
-
-    // Decodifica o token
-    const decodedToken = jwt.decode(token);
-
-    // Retorna as informações decodificadas
-    return decodedToken;
-}

@@ -111,17 +111,17 @@ body {
     color: #ccc;
 }
 
-.login-registro {
+.login-register {
     margin-top: 10px;
     font-size: 14px;
 }
 
-.login-registro a {
+.login-register a {
     text-decoration: none;
     color: #6d2f55;
 }
 
-.login-registro a:hover {
+.login-register a:hover {
     text-decoration: underline;
     color: #f8039a;
 }
