@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuniar Market Place</title>
-    <link rel="stylesheet" href="../css/style.css">
-    ]<link rel="stylesheet" href="../css/style-login.css">
+    <title>Anunciar Market Place</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/announcement.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script defer src="../js/announcement.js"></script>
 </head>
 <body>
     <header>
@@ -14,10 +16,10 @@
             </div>
             <div id="user-avatar" class="user-avatar"></div>
         </nav>
+        <button type="submit" class="btn-login" id="btn-login">Voltar</button>
     </header>
     <main>
         <form action="" class="announcement"></form>
-        <button type="submit" class="btn-login" id="btn-login">Voltar</button>
             <div class="form-control">
                 <input type="text" placeholder="Título" class="" id="input-title" autocomplete="current-password">
                 <i class="bi bi-exclamation-circle"></i>
@@ -25,7 +27,7 @@
                 <small></small>
             </div>
             <div class="form-control">    
-                <input type="text" placeholder="Descrição" class="" id="input-description" autocomplete="current-password">
+                <textarea id="mensagem" name="mensagem" rows="10" cols="50" placeholder="Detalhe seu anúncio"></textarea>
                 <i class="bi bi-exclamation-circle"></i>
                 <i class="bi bi-check-circle"></i>
                 <small></small>
@@ -38,8 +40,7 @@
             </div>
             <div class="form-control">    
                 <select id="input-category">
-                    <label for="input-category">Fotos</label>
-                    <option value="">Selecione...</option>
+                    <option value="">Categoria...</option>
                     <option value="eletronicos">Eletrônicos</option>
                     <option value="roupas">Roupas</option>
                     <option value="moveis">Acessórios</option>
@@ -55,7 +56,7 @@
                 <small></small>
             </div>
             <div class="form-control">    
-                <label for="input-img">Fotos</label>
+                <label class="custom-file-input" for="input-img">Carregar Fotos ...</label>
                 <input type="file" placeholder="Fotos" class="" id="input-img" accept="image/*" multiple>
                 <i class="bi bi-exclamation-circle"></i>
                 <i class="bi bi-check-circle"></i>
@@ -66,9 +67,7 @@
         </form>
     </main>
     <footer>
-        <div class="logo-market-place">
-            <img src="imagens/market-logo.png" alt="">
-        </div>
+        <img src="../imagens/logo-market-em-fundo.png" alt="">
     </footer>
 
 </body>
