@@ -3,10 +3,11 @@ footer{
     margin: 0 20px;
     padding: 20px 4%;
     border-top: 3px solid palevioletred;
+    display: flex;
+    justify-content: space-around;
 }
 
-.flex .links-footer{
-    padding: 2% 4%;
+.links-footer{
     align-items: center;
     justify-content: center;
 }

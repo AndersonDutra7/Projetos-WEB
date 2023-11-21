@@ -76,8 +76,8 @@ function checkSenha() {
     let senhaValor = senha.value;
     if (senhaValor === "") {
         setErrorFor(senha, "A senha é obrigatória.");
-    } else if (senhaValor.length < 7 || senhaValor.length > 16) {
-        setErrorFor(senha, "A senha deve ter entre 7 e 16 caracteres.");
+    } else if (senhaValor.length < 8 || senhaValor.length > 16) {
+        setErrorFor(senha, "A senha deve ter entre 8 e 16 caracteres.");
     } else if (!/[a-zA-Z]/.test(senhaValor)) {
         setErrorFor(senha, "A senha deve conter pelo menos uma letra.");
     } else if (!/\d/.test(senhaValor)) {
@@ -103,34 +103,4 @@ function setErrorFor(input, message) {
     formControl.classList.remove("success");
     formControl.classList.add("error");
     small.innerText = message;
-}
-
-async function refreshToken() {
-    const refreshToken = localStorage.getItem('refreshToken');
-
-    if (!refreshToken) {
-        alert("Sua sessão expirou, faça login novamente.");
-        window.location.href = "../login.html";
-        return;
-    }
-
-    const refreshRequest = await fetch('http://localhost:8081/auth/refresh', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${refreshToken}`
-        },
-    });
-
-    if (refreshRequest.ok) {
-        const newAccessToken = await refreshRequest.json().then(data => data.accessToken);
-        localStorage.setItem('authToken', newAccessToken);
-        // Continue a execução após renovar o token
-        alert("Token renovado com sucesso. Continue a operação.");
-    } else {
-        // Manipule erros, como revogar o refresh token se inválido
-        alert("Erro ao renovar o token. Faça login novamente.");
-        // Redirecionar para a página de login
-        window.location.href = "../login.html";
-    }
 }

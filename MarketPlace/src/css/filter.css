@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+main {
+    padding: 40px 4%;
+    display: flex;
+    flex: 1;
+}
+
+.list-categories {
+    width: 30%;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background-color: white;
+}
+
+.list-categories h2{
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    padding: 3%;
+    border-bottom: 3px solid palevioletred;
+    color: #55555598;
+}
+
+.list-announcement {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;   
+}
+
+  /* Adicione estilos adicionais conforme necessário */
+
+  /* Estilos para os cards de anúncio */
+  .announcement-card {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 30%;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background-color: white;
+  }
+
+  /*.announcement-card img {
+    max-width: 100%;
+    height: auto;
+  } */

@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script defer src="js/script.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo-market-place">
-            </div>
+            <a href="index.html"><div class="logo-market-place">
+            </div></a>
             <div class="navbar-items">
-                <input type="text" placeholder="Buscar Produto">
-                <button id="btn-login" class="btn-login" href="">Login</button>
+                <input type="text" placeholder="Pesquisar" id="search-input">
+                <button id="btn-login" class="btn-login">Login</button>
                 <button id="btn-anunciar" class="btn-anunciar">Anunciar</button>
-                <p class="login-register"><a href="html/announcement.html">teste</a></p>
+                <div id="user-avatar" class="user-avatar"></div>
             </div>
-            <div id="user-avatar" class="user-avatar"></div>
         </nav>
     </header>
     <main>
@@ -133,18 +132,13 @@
         </section>
     </main>
     <footer>
-        <!-- <div class="interface"> -->
-            <div class="flex">
-                <div class="logo-market-place">
-                    <img src="imagens/market-logo.png" alt="">
-                </div>
-                <div class="links-footer">
-                    <p>Criadores</p>
-                        <a href="https://www.linkedin.com/in/anderson-dutra-88b294211/" target="_blank">Anderson Dutra</a><br>
-                        <a href="https://www.linkedin.com/in/diegoreis42/" target="_blank">Diego Reis</a>
-                </div>
-            </div><!--flex-->
-        <!-- </div> interface -->
+        <a href="index.html"><div class="logo-market-place">
+        </div></a>
+        <div class="links-footer">
+            <p>Criadores</p>
+                <a href="https://www.linkedin.com/in/anderson-dutra-88b294211/" target="_blank">Anderson Dutra</a><br>
+                <a href="https://www.linkedin.com/in/diegoreis42/" target="_blank">Diego Reis</a>
+        </div>
     </footer>
     
 </body>
