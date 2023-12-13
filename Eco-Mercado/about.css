@@ -1,10 +1,10 @@
-.ecocup-content div {
+.produto-content div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ecocup-content {
+.produto-content {
   text-align: center;
 }
 

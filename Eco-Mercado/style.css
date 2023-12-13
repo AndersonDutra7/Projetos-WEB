@@ -35,6 +35,10 @@ h2.titulo span {
   position: relative;
 }
 
+button i{
+  font-size: 30px;
+}
+
 /*ESTILO HEADER*/
 header {
   padding: 40px 4%;
@@ -251,44 +255,56 @@ section.topo-do-site .flex {
   transition: 0.3s;
 }
 
-/*ECOCUP*/
-section.ecocup {
+/*PRODUTO*/
+section.produto {
   margin-top: 3%;
   padding: 40px 4%;
   background-color: #98fb987a;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-  border-top-left-radius: 35%;
-  border-top-right-radius: 35%;
+  border-radius: 35%;
 }
 
-section.ecocup .flex {
+section.produto .flex {
   gap: 60px;
 }
 
-.ecocup .img-eco-cup img {
+.produto .img-produto img {
   border-radius: 20px;
-  margin-top: 15px;
-  margin-left: 35px;
-  margin-bottom: 45px;
-  width: 360px;
-  height: 380px;
   background-size: cover;
-  background-position: top;
-  position: relative;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-top: 15px;
 }
 
-.ecocup p {
+.produto .img-produto-detalhes{
+  margin-top: 130px;
+}
+
+.produto h1{
+  color: #2e8b57;
+  text-align: center;
+}
+
+.produto .span-preco{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.produto p {
   margin-top: 15px;
-  margin-left: 20px;
-  position: relative;
+  margin-left: 15px;
   font-size: 20px;
   color: #3cb371;
 }
 
-.ecocup .btn-login {
+.produto .btn-login {
   margin-top: 30px;
   margin-left: 20px;
+}
+
+.produto-btn{
+  display: flex;
 }
 
 /*DEPOIMENTOS*/
@@ -328,6 +344,7 @@ section.depoimentos .flex {
 footer {
   padding: 20px 4%;
   box-shadow: 0 0 20px #3cb371;
+  margin-top: 3%;
 }
 
 footer .flex {
