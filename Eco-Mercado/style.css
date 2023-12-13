@@ -35,7 +35,7 @@ h2.titulo span {
   position: relative;
 }
 
-button i{
+button i {
   font-size: 30px;
 }
 
@@ -276,16 +276,16 @@ section.produto .flex {
   margin-top: 15px;
 }
 
-.produto .img-produto-detalhes{
+.produto .img-produto-detalhes {
   margin-top: 130px;
 }
 
-.produto h1{
+.produto h1 {
   color: #2e8b57;
   text-align: center;
 }
 
-.produto .span-preco{
+.produto .span-preco {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -303,7 +303,7 @@ section.produto .flex {
   margin-left: 20px;
 }
 
-.produto-btn{
+.produto-btn {
   display: flex;
 }
 
@@ -369,14 +369,14 @@ footer h1 spam {
   color: #3cb371;
 }
 
-footer .btn-social button{
+footer .btn-social button {
   width: 60px;
   height: 60px;
   font-size: 30px;
   border: none;
   cursor: pointer;
   margin: 0 8px;
-  transition: .2s;
+  transition: 0.2s;
   background-color: transparent;
 }
 
@@ -465,49 +465,20 @@ footer .line-footer p a {
 
   .topo-do-site h1 {
     font-size: 34px;
-  }
-
-  }
-
-  .img-sobre img {
-    width: 140%;
-  }
-
-  .txt-sobre h2 {
-    font-size: 34px;
-    text-align: center;
-    line-height: 35px;
-  }
-
-  .btn-social {
     text-align: center;
   }
 
-  .sobre p {
-    font-size: 20px;
+  .topo-do-site p {
+    text-align: center;
   }
+}
 
-  section .portfolio {
-    padding: 80px 8%;
-  }
-
-  section.portfolio .flex {
-    gap: 50px;
-  }
-
-  /* PORTFOLIO */
-  .img-port {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-  }
-
-  /* RODAPE */
-  footer .flex {
+/* RODAPE */
+/* footer .flex {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+} */
 
 @media screen and (max-width: 390px) {
   h2.titulo span::after {
@@ -519,7 +490,7 @@ footer .line-footer p a {
     text-align: center;
   }
 
-  h2.titulo span::after {
+  /* h2.titulo span::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -529,7 +500,7 @@ footer .line-footer p a {
     animation: digitar 20s steps(15) infinite;
     width: calc(100% + 10px);
     background-color: black;
-  }
+  } */
 
   .topo-do-site p {
     text-align: center;
