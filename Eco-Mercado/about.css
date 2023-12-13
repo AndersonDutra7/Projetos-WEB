@@ -1,0 +1,13 @@
+.ecocup-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecocup-content {
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+}
