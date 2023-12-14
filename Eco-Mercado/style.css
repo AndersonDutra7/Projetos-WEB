@@ -120,7 +120,7 @@ header nav.menu-desktop ul li:hover {
 }
 
 .btn-abrir-menu i {
-  color: rgb(107, 107, 207);
+  color: #2e8b57;
   font-size: 60px;
   font-weight: 700;
 }
@@ -150,7 +150,7 @@ header nav.menu-desktop ul li:hover {
 }
 
 .menu-mobile .btn-fechar i {
-  color: rgb(107, 107, 207);
+  color: #2e8b57;
   font-size: 30px;
 }
 
@@ -456,6 +456,10 @@ section.calcCarbono {
   justify-content: center;
 }
 
+.calcCarbono img{
+  margin-bottom: 80px;
+}
+
 /* FOOTER */
 footer {
   padding: 20px 4%;
@@ -566,8 +570,11 @@ footer .line-footer p a {
   }
 
   /* CABECALHO */
-  .menu-desktop,
-  .btn-contato {
+  .menu-desktop{
+    display: none;
+  }
+
+  header .btn-login{
     display: none;
   }
 
@@ -592,14 +599,60 @@ footer .line-footer p a {
   .topo-do-site p {
     text-align: center;
   }
+
+  /* PRODUTO */
+  section.produto {
+    text-align: center;
+  }
+  
+  .produto .img-produto {
+    border-radius: 20px;
+    background-size: cover;
+    width: 300px;
+    height: 600px;
+    margin-top: 0px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-produto IMG{
+    display: flex;
+  }
+  
+  .produto .img-produto-detalhes {
+    margin-top: 130px;
+  }
+  
+  .produto h1 {
+    color: #2e8b57;
+    text-align: center;
+  }
+  
+  .produto .span-preco {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .produto p {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #3cb371;
+  }
+  
+  .produto .btn-login {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  .produto-btn {
+    display: flex;
+  }
 }
 
-/* RODAPE */
-/* footer .flex {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-} */
 
 @media screen and (max-width: 390px) {
   h2.titulo span::after {
