@@ -341,6 +341,121 @@ section.depoimentos .flex {
   margin: 15px 0;
 }
 
+/*PARCEIROS*/
+section.parceiros {
+  padding: 40px 4%;
+}
+
+.parceiros .parceiros-box {
+  max-width: 100%;
+  color: #3cb371;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+}
+
+.parceiros-box .flex {
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.parceiros-box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.parceiros-box h3 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.parceiros-box span {
+  font-weight: bolder;
+}
+
+/* RECICLE */
+section.recicle {
+  padding: 40px 4%;
+}
+
+.recicle .interface {
+  max-width: 100%;
+  color: #3cb371;
+  padding: 40px;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.recicle h3 {
+  font-size: 28px;
+  color: #2e8b57;
+}
+
+.recicle .flex {
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.recicle h4 {
+  font-size: 24px;
+}
+
+.recicle p {
+  color: #512e04;
+}
+
+.flex .card-recicle {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #ecf8e5;
+  margin: 40px;
+  padding: 10px 4%;
+  position: relative;
+}
+
+.flex .card-recicle h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-recicle span {
+  font-weight: bolder;
+  color: rgb(41, 39, 39);
+}
+
+.card-recicle p {
+  color: #512e04;
+  font-size: 13px;
+}
+
+/* CALCCARBONO */
+section.calcCarbono {
+  padding: 40px 4%;
+}
+
+.calcCarbono .interface {
+  max-width: 100%;
+  color: #3cb371;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.calcCarbono h2 {
+  font-size: 44.5px;
+}
+
+.calcCarbono .flex {
+  margin-top: 80px;
+  justify-content: center;
+}
+
 /* FOOTER */
 footer {
   padding: 20px 4%;
@@ -428,6 +543,10 @@ footer .line-footer p i a {
 footer .line-footer p a {
   text-decoration: none;
   color: #2e8b57;
+}
+
+.borda img {
+  width: 50%;
 }
 
 @media screen and (max-width: 1020px) {
