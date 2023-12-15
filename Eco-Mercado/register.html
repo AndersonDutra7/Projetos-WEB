@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph & Teddy - The Library</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-navbar">
+                <a href="{% url 'home' %}">
+                    <img src="../../../media/logo-sem-fundo.png" alt="Home">
+                </a>
+            </div>
+            <div class="title-navbar">
+                <h1>Ralph & Teddy - The Library</h1>
+            </div>
+            <div class="logo-navbar">
+                <a href="{% url 'home' %}">
+                    <img src="../../../media/logo-sem-fundo.png" alt="Home">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="login-logo logo-register">
+            </div>
+            <h3>Crie sua conta! É Grátis!</h3>
+            <form class="login-form" method="POST"> {% csrf_token %}
+                <input type="text" placeholder="Nome" class="login-input" name="username">
+                <input type="email" placeholder="Email" class="login-input" name="email">
+                <h3>Cadastre sua senha.</h3>
+                <p>Use letras e números.</p>
+                <input type="password" placeholder="Senha" class="login-input" name="password">
+                <input type="password" placeholder="Confirmar Senha" class="login-input" name="password-confirm">
+                <button type="submit" class="btn-login">Cadastrar</button>
+            </form>
+            <form class="login-form">
+                {% if messages %}
+                    {% for message in messages %}
+                        {% if message.level_tag == 'success' %}
+                            <h4 class="success-message">{{ message }}</h4>
+                        {% else %}
+                            <h4 class="error-message">{{ message }}</h4>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </form>               
+            <p class="login-registro">Já possui conta? <a href="{% url 'login' %}">Entrar</a></p>
+        </div>
+        <footer class="footer">
+            <img src="../../../media/ralph-rosto.png" alt="Ralph">
+            <a href="https://github.com/AndersonDutra7" target="_blank"><i class="fab fa-github"></i></a>
+            <p>Created by Anderson Dutra</p>
+            <a href="https://www.linkedin.com/in/anderson-dutra-88b294211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <img src="../../../media/teddy-rosto.png" alt="Teddy">
+        </footer>
+</body>
+</html>
