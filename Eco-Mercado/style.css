@@ -87,14 +87,6 @@ header input {
   padding: 0 10px;
 }
 
-header i {
-  color: #2e8b57;
-  position: absolute;
-  margin-top: 8px;
-  margin-left: -30px;
-  transform: scaleX(-1);
-}
-
 header nav.menu-desktop a:hover {
   color: #3cb371;
   transform: scale(1.02);
@@ -318,7 +310,7 @@ section.depoimentos .flex {
 }
 
 .depoimentos .depoimentos-box {
-  width: 400px;
+  width: 100%;
   color: #3cb371;
   padding: 40px;
   border-radius: 20px;
@@ -605,114 +597,147 @@ footer .line-footer p a {
     text-align: center;
   }
   
-  .produto .img-produto {
-    border-radius: 20px;
-    background-size: cover;
-    width: 300px;
-    height: 600px;
-    margin-top: 0px;  
-    display: flex;
+  section.produto .flex {
+    gap: 30px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-
-  .img-produto IMG{
-    display: flex;
   }
   
   .produto .img-produto-detalhes {
-    margin-top: 130px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
   .produto h1 {
     color: #2e8b57;
     text-align: center;
+    padding-top: 50px;
   }
-  
-  .produto .span-preco {
+
+  .produto-content{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .produto p {
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 20px;
-    color: #3cb371;
+
+  /*DEPOIMENTOS*/
+  section.depoimentos {
+    padding: 40px 4%;
   }
-  
-  .produto .btn-login {
+
+  .depoimentos h2{
+    margin-top: 40px;
+    margin-bottom: -60px;
+  }
+
+  section.depoimentos .flex {
+    gap: 30px;
+  }
+
+  .depoimentos .depoimentos-box {
+    width: 100%;
+    margin-bottom: -150px;
+  }
+
+    /*PARCEIROS*/
+  .parceiros h2{
+    margin-top: 100px;
+  }
+
+  .parceiros .parceiros-box {
     margin-top: 30px;
-    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .parceiros-box .flex {
+    gap: 10px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parceiros-box h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* RECICLE */
+  .recicle .interface {
+    margin-top: -100px;
+  }
+
+  .recicle .flex {
+    gap: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .flex .card-recicle {
+    margin: 20px;
+  }
+
+  /* CALCCARBONO */
+  section.calcCarbono {
+    padding: 40px 4%;
+  }
+
+  .calcCarbono .interface {
+    margin-top: -40px;
+  }
+
+  .calcCarbono h2 {
+    font-size: 44.5px;
+    margin-bottom: 10px;
+  }
+
+  .calcCarbono .flex {
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calcCarbono img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 80px;
+  }
+
+  footer .btn-social {
+    width: 100%;
+    text-align: center;
   }
   
-  .produto-btn {
-    display: flex;
+}
+
+@media screen and (max-width: 525px) {
+  /* GERAL */
+  .btn-abrir-menu {
+    display: block;
+    cursor: pointer;
   }
+
+  /*DEPOIMENTOS*/
+  section.depoimentos {
+    text-align: center;
+  }
+
 }
 
 
-@media screen and (max-width: 390px) {
-  h2.titulo span::after {
-    top: 0px;
-  }
-
-  .topo-do-site h1 {
-    font-size: 33px;
-    text-align: center;
-  }
-
-  /* h2.titulo span::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    border-left: 2px solid rgb(107, 107, 207);
-    right: -10px;
-    opacity: 1;
-    animation: digitar 20s steps(15) infinite;
-    width: calc(100% + 10px);
-    background-color: black;
-  } */
-
-  .topo-do-site p {
-    text-align: center;
-  }
-
-  .especialidades .especialidades-box p {
-    font-size: 24px;
-  }
-
-  .btn-social {
-    text-align: center;
-  }
-
-  .sobre p {
-    font-size: 24px;
-  }
-
-  /* RODAPE */
-  footer .flex {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  footer .line-footer .btn-social a button {
-    margin-bottom: 20px;
-  }
+@media screen and (max-width: 400px) {
+  /* RECICLE */
+.recicle h3 {
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 350px) {
-  .btn-social button {
-    width: 50px;
-    height: 50px;
-  }
-  footer .line-footer p {
-    text-align: center;
-  }
+.recicle h4 {
+  font-size: 20px;
+}
 
-  footer .line-footer p i {
-    font-size: 40px;
-  }
+.flex .card-recicle {
+  margin: 10px;
+}
 }

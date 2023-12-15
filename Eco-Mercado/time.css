@@ -32,3 +32,41 @@
   height: 200px;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 830px) {
+  .line1 {
+    margin-top: 10px;
+    padding: 0px;
+  }
+  
+  .line2 {
+    margin-top: 0px;
+  }
+  
+  .line3 {
+    padding: 0 0px;
+    margin: 0px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .line1 {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .line2 {
+    margin-bottom: 10px;
+  }
+
+  .line3 {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+}
