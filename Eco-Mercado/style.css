@@ -428,7 +428,7 @@ section.recicle {
 
 /* CALCCARBONO */
 section.calcCarbono {
-  padding: 40px 4%;
+  padding: 20px 4%;
 }
 
 .calcCarbono .interface {
@@ -437,6 +437,7 @@ section.calcCarbono {
   padding: 40px;
   margin-top: 40px;
   text-align: center;
+  font-size: 20px;
 }
 
 .calcCarbono h2 {
@@ -450,6 +451,58 @@ section.calcCarbono {
 
 .calcCarbono img {
   margin-bottom: 80px;
+}
+
+.frete-content {
+  max-width: 50%;
+  margin: 0 2%;
+  text-align: center;
+  color: #3cb371;
+  font-size: 20px;
+}
+
+.frete-content img {
+  width: 300px;
+  height: 300px;
+  margin-top: -30px;
+}
+
+.frete-content .reflorestar {
+  border-radius: 20px;
+  border: 3px solid #2e8b57;
+}
+
+.calcCarbono #calculadora {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 40px;
+  border: 3px solid #2e8b57;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#calculadora label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#calculadora input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#calculadora .btn-login {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#calculadora #resultado {
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -702,6 +755,16 @@ footer .line-footer p a {
     width: 90%;
     height: 90%;
     margin-bottom: 80px;
+  }
+
+  .frete-content {
+    max-width: 100%;
+  }
+
+  .frete-content img {
+    width: 300px;
+    height: 300px;
+    margin-top: 5px;
   }
 
   footer .btn-social {

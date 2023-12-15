@@ -27,3 +27,17 @@ const mascaraTelefone = (valor) => {
   valor = valor.replace(/(\d)(\d{4})$/, "$1-$2");
   tel.value = valor;
 };
+
+/* FUNÇÃO CALCCARBONO*/
+function calculadora() {
+  var eletrecidade = parseFloat(document.getElementById("eletrecidade").value);
+  var gas = parseFloat(document.getElementById("gas").value);
+  var combustivel = parseFloat(document.getElementById("combustivel").value);
+
+  var emissaoCarbono = eletrecidade * 0.5 + gas * 2 + combustivel * 2.3;
+
+  document.getElementById("resultado").innerHTML =
+    "<p>Emissões de Carbono Estimadas: <strong>" +
+    emissaoCarbono.toFixed(2) +
+    " kg CO2e</strong></p>";
+}

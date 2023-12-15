@@ -274,7 +274,46 @@
             <p>Pensando nisso, investimos em pesquisa e desenvolvimento de tecnologias mais limpas e eficientes em termos de carbono, incentivando a inovação nas cadeias de produção.</p>
           </div><!--interface-->
         </section><!--calcCarbono-->
-        
+        <section class="calcCarbono interface"><!--frete-->
+          <h2 class="titulo">Mais Parceria com o <span>Meio Ambiente...</span></h2>
+          <h2 class="titulo">Frete <span>Sustentável</span></h2>
+            <div class="flex">
+              <div class="frete-content">
+                <p>Os caminhões elétricos apresentam diversos benefícios, incluindo a redução de emissões poluentes, menor custo operacional devido à eletricidade mais barata e manutenção simplificada, eficiência energética superior, incentivos governamentais, menor poluição sonora, desenvolvimento tecnológico, melhoria na imagem corporativa e adaptação às demandas crescentes por práticas sustentáveis. Esses veículos desempenham um papel crucial na transição para um transporte mais limpo e eficiente.</p>
+              </div>
+              <div class="frete-content">
+                <img src="imgs/caminhao (2).png" alt="">
+              </div>
+            </div>
+        </section><!--frete-->
+        <section class="calcCarbono interface"><!--reflorestamento-->
+          <h2 class="titulo">Ainda é pouco<span>?</span></h2>
+          <h2 class="titulo">Também somos amigos das <span>Árvores...</span></h2>
+            <div class="flex">
+              <div class="frete-content">
+              <p>O reflorestamento é o plantio de árvores em áreas degradadas e apresenta diversos benefícios. Ele contribui para a conservação da biodiversidade, o sequestro de carbono, a melhoria da qualidade do ar e da água, o controle da erosão do solo, o fornecimento de recursos naturais, a promoção do turismo, a preservação de ecossistemas únicos, a sustentabilidade a longo prazo e o combate à desertificação. Essa prática desempenha um papel essencial na restauração ambiental e na promoção de ecossistemas saudáveis.</p>              </div>
+              <div class="frete-content">
+                <img class="reflorestar"  src="imgs/reflorestamento.PNG" alt="">
+              </div>
+            </div>
+        </section><!--reflorestamento-->
+        <section class="calcCarbono">
+          <h2 class="titulo">Calcule o nível de <span>Carbono</span></h2>
+          <form id="calculadora">
+            <label for="eletrecidade">Consumo de Eletricidade (kWh):</label>
+            <input type="number" id="eletrecidade" name="eletrecidade" required>
+    
+            <label for="gas">Consumo de Gás (m³):</label>
+            <input type="number" id="gas" name="gas" required>
+    
+            <label for="combustivel">Consumo de Combustível (litros):</label>
+            <input type="number" id="combustivel" name="combustivel" required>
+    
+            <div class="btn-login" ><button type="button" class="btnlogin" onclick="calculadora()">Calcular Emissões</button></div>
+    
+            <div id="resultado"></div>
+        </form>
+        </section>
         <footer>
             <div class="interface"><!--interface-->
                 <div class="line-footer">
