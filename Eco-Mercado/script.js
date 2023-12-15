@@ -41,3 +41,18 @@ function calculadora() {
     emissaoCarbono.toFixed(2) +
     " kg CO2e</strong></p>";
 }
+
+/* BUSCADOR */
+function buscador() {
+  var query = document.getElementById("buscador").value.toLowerCase();
+
+  / Verifica se a palavra está na página
+  if (document.body.innerText.toLowerCase().includes(query)) {
+    var element = document.getElementById(query);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+  } else {
+    alert("Nenhum item encontrado com a palavra: " + query);
+  }
+}
