@@ -159,12 +159,12 @@ header nav.menu-desktop ul li:hover {
 }
 
 .menu-mobile nav ul li a:hover {
-  background-color: rgb(107, 107, 207);
+  background-color: aliceblue;
   color: black;
 }
 
 .overlay-menu {
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: #2e8b57;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -699,8 +699,8 @@ footer .line-footer p a {
   }
 
   .calcCarbono img {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
     margin-bottom: 80px;
   }
 
@@ -715,6 +715,11 @@ footer .line-footer p a {
   .btn-abrir-menu {
     display: block;
     cursor: pointer;
+  }
+
+  /* PRODUTO */
+  section.produto {
+    border-radius: 10%;
   }
 
   /*DEPOIMENTOS*/
