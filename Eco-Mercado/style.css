@@ -448,7 +448,7 @@ section.calcCarbono {
   justify-content: center;
 }
 
-.calcCarbono img{
+.calcCarbono img {
   margin-bottom: 80px;
 }
 
@@ -562,11 +562,11 @@ footer .line-footer p a {
   }
 
   /* CABECALHO */
-  .menu-desktop{
+  .menu-desktop {
     display: none;
   }
 
-  header .btn-login{
+  header .btn-login {
     display: none;
   }
 
@@ -596,26 +596,26 @@ footer .line-footer p a {
   section.produto {
     text-align: center;
   }
-  
+
   section.produto .flex {
     gap: 30px;
     padding: 20px;
     justify-content: center;
     align-items: center;
   }
-  
+
   .produto .img-produto-detalhes {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  
+
   .produto h1 {
     color: #2e8b57;
     text-align: center;
     padding-top: 50px;
   }
 
-  .produto-content{
+  .produto-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -626,7 +626,7 @@ footer .line-footer p a {
     padding: 40px 4%;
   }
 
-  .depoimentos h2{
+  .depoimentos h2 {
     margin-top: 40px;
     margin-bottom: -60px;
   }
@@ -640,8 +640,8 @@ footer .line-footer p a {
     margin-bottom: -150px;
   }
 
-    /*PARCEIROS*/
-  .parceiros h2{
+  /*PARCEIROS*/
+  .parceiros h2 {
     margin-top: 100px;
   }
 
@@ -698,7 +698,7 @@ footer .line-footer p a {
     align-items: center;
   }
 
-  .calcCarbono img{
+  .calcCarbono img {
     width: 400px;
     height: 400px;
     margin-bottom: 80px;
@@ -708,7 +708,6 @@ footer .line-footer p a {
     width: 100%;
     text-align: center;
   }
-  
 }
 
 @media screen and (max-width: 525px) {
@@ -723,21 +722,46 @@ footer .line-footer p a {
     text-align: center;
   }
 
+  .depoimentos .depoimentos-box:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
-
 
 @media screen and (max-width: 400px) {
   /* RECICLE */
-.recicle h3 {
-  font-size: 20px;
-  margin-top: 20px;
+  .recicle h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .recicle h4 {
+    font-size: 20px;
+  }
+
+  .flex .card-recicle {
+    margin: 10px;
+  }
+
+  .logo h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
-.recicle h4 {
-  font-size: 20px;
-}
-
-.flex .card-recicle {
-  margin: 10px;
-}
+@media screen and (max-width: 342px) {
+  /* RECICLE */
+  .calcCarbono img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 80px;
+  }
 }

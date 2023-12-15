@@ -117,6 +117,12 @@ main {
   color: #94c6f8;
 }
 
+.login-container h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #2e8b57;
+}
+
 @media screen and (max-width: 720px) {
   .login-container {
     width: 80%;
@@ -143,5 +149,17 @@ main {
   .login-logo img {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .login-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  h2.titulo {
+    font-size: 20px;
   }
 }
