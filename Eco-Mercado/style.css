@@ -264,8 +264,7 @@ section.produto .flex {
   background-size: cover;
   width: 300px;
   height: 300px;
-  display: block;
-  margin-top: 15px;
+  margin: 60px 0px 60px 60px;
 }
 
 .produto .img-produto-detalhes {
