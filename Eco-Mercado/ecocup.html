@@ -19,14 +19,14 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="about.html">Quem Somos</a></li>
-                    <li><a href="index.html#produto">Produtos</a></li>
-                    <li><input type="text"><i class="bi bi-search"></i></li>
-                    <li><a href="index.html#parceiros">Parceiros</a></li>
-                    <li><a href="index.html#calcCarbono">Consciência</a></li>
+                    <li><a href="#produto">Produtos</a></li>
+                    <li><input type="text" id="buscador" name="buscador"  onclick="buscador()"></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#calcCarbono">Consciência</a></li>
                 </ul>
             </nav>
             <div>
-                <div class="btn-login"><a href=""><button>LOGIN</button></a></div>
+                <div class="btn-login"><a href="login.html"><button>LOGIN</button></a></div>
             </div>
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
@@ -37,18 +37,18 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Ínicio</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Ínicio</a></li>
                         <li><a href="about.html">Quem Somos</a></li>
-                        <li><a href="index.html#produto">Produtos</a></li>
-                        <li><a href="index.html#projeto">Parceiros</a></li>
-                        <li><a href="index.html#calcCarbono">Consciência</a></li>
+                        <li><a href="#produto">Produtos</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#calcCarbono">Consciência</a></li>
                     </ul>
                 </nav>
 
             </div><!--menu-mobile-->
             <div class="overlay-menu" id="overlay-menu"></div>
         </div> <!--interface-->
-
     </header>
     <main>
         <section class="topo-do-site">
@@ -66,8 +66,8 @@
         </section><!--topo-do-site-->
         <section id="produto" class="produto">
             <div class="interface">
-                <h2 class="titulo">Eco <span>Cup</span>
-                    - Copo Biodegradavel 360ml 1un</h2>
+                <h2 class="titulo">Eco <span>Cup</span> <br>
+                    Copo Biodegradavel 360ml 1un</h2>
                 <div class="flex">
                   <div class="img-produto img-produto-detalhes">
                     <img src="imgs/eco-cup.jpg" alt="">

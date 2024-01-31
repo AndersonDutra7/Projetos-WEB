@@ -123,6 +123,10 @@ main {
   color: #2e8b57;
 }
 
+h2.titulo {
+  padding: 0;
+}
+
 @media screen and (max-width: 720px) {
   .login-container {
     width: 80%;
