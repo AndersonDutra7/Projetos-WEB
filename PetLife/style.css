@@ -69,14 +69,13 @@ h2 {
 
 .absolute {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -13%;
+  left: 5%;
   width: 100%;
   z-index: -10;
 }
 
 #clinica {
-  margin-top: 15px;
   margin-left: 32px;
   display: flex;
   align-items: center;
@@ -188,158 +187,4 @@ footer p a {
 #copyright a {
   text-decoration: none;
   color: yellowgreen;
-}
-
-@media screen and (max-width: 769px) {
-  #inicio {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #inicio img {
-    width: 580px;
-    height: 580px;
-  }
-
-  h1,
-  h2 {
-    margin-top: -32px;
-  }
-
-  .paragrafo {
-    font-size: 24px;
-  }
-
-  .botao {
-    font-size: 24px;
-  }
-  .absolute {
-    top: 220px;
-    transform: translateX(25%);
-  }
-
-  #clinica {
-    margin-top: 15px;
-    margin-left: 32px;
-    margin-right: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 64px;
-    pad: 64px 80px;
-  }
-
-  #clinica img {
-    margin-top: -80px;
-    margin-bottom: 60px;
-  }
-
-  #clinica li {
-    width: 80%;
-    font-size: 24px;
-    display: inline-block;
-    border-bottom: 2px solid #ff725e;
-  }
-
-  #farmacia {
-    padding: 64px 80px;
-    text-align: center;
-  }
-
-  #farmacia img {
-    margin: 64px auto;
-  }
-
-  #farmacia .paragrafo {
-    max-width: 950px;
-    margin: 0 auto;
-  }
-
-  #duvidas {
-    display: flex;
-    align-items: center;
-    gap: 64px;
-    padding: 64px 80px;
-  }
-
-  .duvida {
-    position: relative;
-  }
-
-  .duvida h3 {
-    border: 2px solid #ff725e;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 24px;
-  }
-
-  .duvida img {
-    position: absolute;
-    top: 32px;
-    right: 24px;
-  }
-
-  .duvida .paragrafo {
-    border-right: 1px solid #ff725e;
-    border-bottom: 1px solid #ff725e;
-    border-left: 1px solid #ff725e;
-    border-radius: 0 0 10px 10px;
-    margin-top: -8px;
-    padding: 0 24px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  .duvida.ativa .paragrafo {
-    height: fit-content;
-    opacity: 1;
-    padding: 24px;
-  }
-
-  footer {
-    background-color: rgba(255, 152, 108, 0.25);
-    display: flex;
-    justify-content: space-between;
-    gap: 80px;
-    padding: 64px 80px;
-  }
-
-  footer img,
-  footer .titulo {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 24px;
-  }
-
-  footer nav a {
-    color: #263138;
-    display: block;
-    margin-bottom: 16px;
-    text-decoration: none;
-  }
-
-  footer p {
-    margin-bottom: 16px;
-  }
-
-  footer p a {
-    color: #263138;
-    text-decoration: none;
-    max-width: 350px;
-  }
-
-  #copyright {
-    background-color: #263138;
-    text-align: center;
-    color: #ffffff;
-    padding: 24px;
-  }
-
-  #copyright a {
-    text-decoration: none;
-    color: yellowgreen;
-  }
 }
