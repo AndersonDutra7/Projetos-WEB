@@ -25,6 +25,12 @@
   .compre-ja .cartao {
     width: 70%;
   }
+
+  footer .line-footer p {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -53,6 +59,11 @@
   .btn-comprar {
     width: 100%;
   }
+
+  footer .line-footer p {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -67,5 +78,10 @@
 
   .compre-ja .cartao .capa-do-jogo {
     max-width: 80%;
+  }
+
+  footer .line-footer {
+    display: block;
+    text-align: center;
   }
 }
