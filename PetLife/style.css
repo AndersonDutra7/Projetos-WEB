@@ -52,6 +52,12 @@ h2 {
   margin-bottom: 32px;
 }
 
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .botao {
   background-color: #ff725e;
   color: #ffffff;
