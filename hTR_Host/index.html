@@ -14,34 +14,50 @@
     "
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <!-- Container -->
     <div class="container">
-      <!-- navbar-container -->
-      <div class="navbar-container">
-        <nav>
-          <a href="#">
-            <img src="img/hTR-logo.png" alt="hTR Host" class="logo" />
-          </a>
-          <ul class="navbar-itens">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Preços</a>
-            </li>
-            <li>
-              <a href="#">Contato</a>
-            </li>
-            <li>
-              <a href="#" class="default-btn">Entrar</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- navbar-container -->
-    </div>
+      <header id="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/hTR-logo.png" alt="">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pricing-container">Preços</a></li>
+                    <li><a href="#contact-container">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="default-btn">
+                <a href="#">
+                    Entrar
+                </a>
+            </div><!--btn-contato-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                  <i class="fas fa-times"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#pricing-container">Preços</a></li>
+                        <li><a href="#contact-container">Contato</a></li>
+                        <li><a href="#">Entrar</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+    </header>
     <main>
       <!-- main-banner -->
       <div class="main-banner">
@@ -96,7 +112,7 @@
       </section>
       <!-- services-container -->
       <!-- pricing-container -->
-      <section class="pricing-container">
+      <section class="pricing-container" id="pricing-container">
         <h2>Planos e Preços</h2>
         <p>Selecione o plano que melhor atende as suas necessidades</p>
         <!-- plans-container -->
@@ -177,7 +193,7 @@
       </section>
       <!-- searchdomain-container -->
       <!-- contact-container -->
-      <section class="contact-container">
+      <section class="contact-container" id="contact-container">
         <h2>Mande uma mensagem</h2>
         <p>
           Envie a sua mensagem, em até 4 horas um especialista entrará em
