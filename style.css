@@ -105,6 +105,17 @@ header {
   padding: 40px 4%;
 }
 
+header.fixed {
+  padding: 5px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(240, 248, 255, 0.486);
+  background-color: black;
+}
+
 header > .interface {
   display: flex;
   align-items: center;
@@ -310,7 +321,8 @@ section.especialidades .flex {
   color: aliceblue;
   padding: 40px;
   border-radius: 20px;
-  margin-top: 45px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   transition: 0.2s;
 }
 
@@ -505,6 +517,22 @@ footer .line-footer p i a {
   color: rgb(107, 107, 207);
 }
 
+.whatsapp-button {
+  color: #25d366;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  position: fixed;
+}
+
+.whatsapp-button:hover {
+  font-size: 55px;
+  color: #128c7e;
+}
+
 @media screen and (max-width: 1020px) {
   /* GERAL */
   .btn-abrir-menu {
@@ -557,6 +585,11 @@ footer .line-footer p i a {
     width: 100%;
     padding: 20px;
     margin-top: 0px;
+    margin-bottom: 0;
+  }
+
+  .especialidades .flex .especialidades-box:last-child {
+    margin-bottom: 45px;
   }
 
   .especialidades .especialidades-box p {
