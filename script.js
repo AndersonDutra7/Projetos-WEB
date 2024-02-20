@@ -37,7 +37,9 @@ window.addEventListener("scroll", () => {
 
   if (scrollPosition > headerHeight) {
     header.classList.add("fixed");
+    header.style.transition = "0.7s";
   } else {
     header.classList.remove("fixed");
+    header.style.transition = "0.7s";
   }
 });

@@ -103,6 +103,7 @@ h2.titulo span::after {
 /*ESTILO HEADER*/
 header {
   padding: 40px 4%;
+  /* transition: transform 0.3s ease; */
 }
 
 header.fixed {
@@ -114,6 +115,7 @@ header.fixed {
   z-index: 1;
   box-shadow: 0 0 20px rgba(240, 248, 255, 0.486);
   background-color: black;
+  /* transform: translateY(-100%); */
 }
 
 header > .interface {
@@ -517,7 +519,7 @@ footer .line-footer p i a {
   color: rgb(107, 107, 207);
 }
 
-.whatsapp-button {
+.btn-whatsapp {
   color: #25d366;
   text-decoration: none;
   font-size: 50px;
@@ -526,9 +528,10 @@ footer .line-footer p i a {
   right: 40px;
   z-index: 1000;
   position: fixed;
+  animation: incandescente 0.7s infinite alternate;
 }
 
-.whatsapp-button:hover {
+.btn-whatsapp:hover {
   font-size: 55px;
   color: #128c7e;
 }
@@ -695,6 +698,11 @@ footer .line-footer p i a {
 
   footer .line-footer .btn-social a button {
     margin-bottom: 20px;
+  }
+
+  .whatsapp-button {
+    bottom: 20px;
+    right: 20px;
   }
 }
 
