@@ -9,14 +9,30 @@ body {
   text-align: center;
   padding: 2rem;
   min-height: 100vh;
-  background: linear-gradient(180deg, #db4444 0%, #3f24d3 98%);
   color: #fff;
+  background-image: url("../img/fundoTabuada.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  max-width: 600px;
+  margin-top: -40px;
 }
 
 h2 {
   margin-bottom: 1rem;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+
+  box-shadow: 0 0 10px rgba(16, 15, 15, 0.5);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.915);
 }
 
 #multiplication-form {
@@ -30,6 +46,7 @@ h2 {
   background-color: #fff;
   border-radius: 1rem;
   color: #333;
+  box-shadow: 0 0 10px rgba(16, 15, 15, 0.5);
 }
 
 .form-control {
@@ -66,11 +83,12 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 0 0 10px rgba(16, 15, 15, 0.5);
 }
 
 .animation {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   display: none;
 }
@@ -107,6 +125,16 @@ h2 {
   border-radius: 0px 20px 20px 20px;
 }
 
+#multiplication-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#multiplication-title span {
+  margin-left: 0.5rem;
+}
+
 #multiplication-operations {
   display: flex;
   flex-direction: column;
@@ -136,18 +164,21 @@ h2 {
   margin-left: 0.4rem;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 650px) {
+  .logo {
+    max-width: 500px;
+  }
+
   h2 {
-    max-width: 300px;
+    max-width: 500px;
   }
 
   .animation {
-    display: flex;
-    max-width: 300px;
+    max-width: 500px;
   }
 
   .text-ralph {
-    top: 8%;
+    top: 16%;
     left: 42%;
     border-radius: 20px 20px 20px 1px;
   }
@@ -156,5 +187,33 @@ h2 {
     top: 60%;
     left: 70%;
     border-radius: 0px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .logo,
+  h2,
+  .animation {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .logo,
+  h2,
+  .animation {
+    max-width: 300px;
+  }
+
+  h2 {
+    padding: 1rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo,
+  h2 {
+    max-width: 250px;
   }
 }

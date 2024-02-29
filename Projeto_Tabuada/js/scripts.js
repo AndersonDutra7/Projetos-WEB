@@ -2,13 +2,18 @@
 const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput = document.querySelector("#number");
 const multiplicatorInput = document.querySelector("#multiplicator");
-const multiplicationTitle = document.querySelector(
+const multiplicationTitle = document.querySelector("#multiplication-title");
+multiplicationTitle.style.display = "none";
+
+const multiplicationTitleSpan = document.querySelector(
   "#multiplication-title span"
 );
 const multiplicationTable = document.querySelector(
   "#multiplication-operations"
 );
 const animationScreen = document.querySelector(".animation");
+const ralphText = document.querySelector(".text-ralph");
+const teddyText = document.querySelector(".text-teddy");
 let multiplicationsAndResults = [];
 
 // Funções
@@ -30,41 +35,45 @@ const createTable = (number, multiplicator) => {
     multiplicationTable.appendChild(row);
   }
 
-  multiplicationTitle.innerText = number;
+  multiplicationTitleSpan.innerText = number;
 };
 
 const animationDogs = () => {
-  const animationScreen = document.querySelector(".animation");
-  const ralphText = document.querySelector(".text-ralph");
-  const teddyText = document.querySelector(".text-teddy");
+  ralphText.innerText = "Ook Teddy!!!\n Vamos fazer algumas contas...";
+  ralphText.style.display = "block";
+  teddyText.style.display = "none";
 
-  let index = 0;
+  setTimeout(() => {
+    let index = 0;
 
-  const displayNext = () => {
-    if (index < multiplicationsAndResults.length) {
-      const isRalphTurn = index % 2 === 0;
+    const displayNext = () => {
+      if (index < multiplicationsAndResults.length) {
+        const isRalphTurn = index % 2 === 0;
 
-      if (isRalphTurn) {
-        ralphText.innerText = multiplicationsAndResults[index];
-        ralphText.style.display = "block";
-        teddyText.style.display = "none";
+        if (isRalphTurn) {
+          ralphText.innerText = multiplicationsAndResults[index];
+          ralphText.style.display = "block";
+          teddyText.style.display = "none";
+        } else {
+          teddyText.innerText = multiplicationsAndResults[index];
+          teddyText.style.display = "block";
+          ralphText.style.display = "none";
+        }
+
+        index++;
+
+        setTimeout(displayNext, 1500);
       } else {
-        teddyText.innerText = multiplicationsAndResults[index];
+        teddyText.innerText = "Obrigado por praticar!!!";
         teddyText.style.display = "block";
         ralphText.style.display = "none";
+        multiplicationTitle.style.display = "flex";
+        multiplicationTable.style.display = "flex";
       }
+    };
 
-      index++;
-
-      setTimeout(displayNext, 1500);
-    } else {
-      ralphText.style.display = "none";
-      teddyText.style.display = "none";
-      multiplicationTable.style.display = "flex";
-    }
-  };
-
-  displayNext();
+    displayNext();
+  }, 2000); // Aguardar 2 segundos antes de iniciar o ciclo de exibição das contas
 };
 
 // Eventos
@@ -79,7 +88,8 @@ multiplicationForm.addEventListener("submit", (e) => {
   }
 
   createTable(multiplicationNumber, multiplicatorNumber);
-  animationScreen.style.display = "block";
+  animationScreen.style.display = "flex";
+  multiplicationTitle.style.display = "none";
   multiplicationTable.style.display = "none";
   animationDogs();
 });
