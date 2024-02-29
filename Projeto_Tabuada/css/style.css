@@ -15,6 +15,8 @@ body {
 
 h2 {
   margin-bottom: 1rem;
+  width: 600px;
+  margin: 0 auto;
 }
 
 #multiplication-form {
@@ -66,6 +68,45 @@ h2 {
   font-weight: bold;
 }
 
+.animation {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  display: none;
+}
+
+.animation img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.text-ralph,
+.text-teddy {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 60%;
+  color: black;
+  background-color: #fff;
+  padding: 1rem;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.text-ralph {
+  top: 17%;
+  left: 35%;
+  border-radius: 20px 20px 20px 1px;
+}
+
+.text-teddy {
+  top: 60%;
+  left: 70%;
+  border-radius: 0px 20px 20px 20px;
+}
+
 #multiplication-operations {
   display: flex;
   flex-direction: column;
@@ -93,4 +134,27 @@ h2 {
 
 #multiplication-operations .result {
   margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 560px) {
+  h2 {
+    max-width: 300px;
+  }
+
+  .animation {
+    display: flex;
+    max-width: 300px;
+  }
+
+  .text-ralph {
+    top: 8%;
+    left: 42%;
+    border-radius: 20px 20px 20px 1px;
+  }
+
+  .text-teddy {
+    top: 60%;
+    left: 70%;
+    border-radius: 0px 20px 20px 20px;
+  }
 }

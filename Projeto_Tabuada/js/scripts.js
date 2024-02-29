@@ -8,6 +8,8 @@ const multiplicationTitle = document.querySelector(
 const multiplicationTable = document.querySelector(
   "#multiplication-operations"
 );
+const animationScreen = document.querySelector(".animation");
+let multiplicationsAndResults = [];
 
 // Funções
 const createTable = (number, multiplicator) => {
@@ -15,6 +17,8 @@ const createTable = (number, multiplicator) => {
 
   for (i = 1; i <= multiplicator; i++) {
     const result = number * i;
+    multiplicationsAndResults.push(`${number} x ${i}`);
+    multiplicationsAndResults.push(result);
 
     const template = `<div class="row">
         <div class="operation">${number} x ${i} = </div>
@@ -29,6 +33,40 @@ const createTable = (number, multiplicator) => {
   multiplicationTitle.innerText = number;
 };
 
+const animationDogs = () => {
+  const animationScreen = document.querySelector(".animation");
+  const ralphText = document.querySelector(".text-ralph");
+  const teddyText = document.querySelector(".text-teddy");
+
+  let index = 0;
+
+  const displayNext = () => {
+    if (index < multiplicationsAndResults.length) {
+      const isRalphTurn = index % 2 === 0;
+
+      if (isRalphTurn) {
+        ralphText.innerText = multiplicationsAndResults[index];
+        ralphText.style.display = "block";
+        teddyText.style.display = "none";
+      } else {
+        teddyText.innerText = multiplicationsAndResults[index];
+        teddyText.style.display = "block";
+        ralphText.style.display = "none";
+      }
+
+      index++;
+
+      setTimeout(displayNext, 1500);
+    } else {
+      ralphText.style.display = "none";
+      teddyText.style.display = "none";
+      multiplicationTable.style.display = "flex";
+    }
+  };
+
+  displayNext();
+};
+
 // Eventos
 multiplicationForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -41,4 +79,7 @@ multiplicationForm.addEventListener("submit", (e) => {
   }
 
   createTable(multiplicationNumber, multiplicatorNumber);
+  animationScreen.style.display = "block";
+  multiplicationTable.style.display = "none";
+  animationDogs();
 });
