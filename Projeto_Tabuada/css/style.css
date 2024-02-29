@@ -30,7 +30,6 @@ h2 {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   border-radius: 15px;
-
   box-shadow: 0 0 10px rgba(16, 15, 15, 0.5);
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.915);
 }
@@ -167,6 +166,7 @@ h2 {
 @media screen and (max-width: 650px) {
   .logo {
     max-width: 500px;
+    margin-top: -30px;
   }
 
   h2 {
