@@ -147,6 +147,7 @@ calcBtn.addEventListener("click", (e) => {
     case "Normal":
       imcNumber.classList.add("good");
       imcInfo.classList.add("good");
+      showImage();
       break;
     case "Sobrepeso":
       imcNumber.classList.add("low");
@@ -175,3 +176,11 @@ backBtn.addEventListener("click", (e) => {
   cleanInputs();
   showOrHideResults();
 });
+
+function showImage() {
+  const containerImg = document.querySelector(".container-img");
+  containerImg.classList.add("show"); // Adiciona a classe show para fazer a div aparecer suavemente
+  // containerImg.style.display = "block";
+}
+
+// Você pode chamar a função showImage() no momento apropriado no seu código JavaScript para fazer a div aparecer.
