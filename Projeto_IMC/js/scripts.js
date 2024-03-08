@@ -53,6 +53,9 @@ const imcInfo = document.querySelector("#imc-info span");
 
 const backBtn = document.querySelector("#back-btn");
 
+//Adicionado animação Ralph & Teddy
+const containerImg = document.querySelector(".container-img");
+
 //Funções
 function createTable(data) {
   data.forEach((item) => {
@@ -143,27 +146,32 @@ calcBtn.addEventListener("click", (e) => {
     case "Magreza":
       imcNumber.classList.add("low");
       imcInfo.classList.add("low");
+      containerImg.style.backgroundImage = 'url("img/low.png")';
       break;
     case "Normal":
       imcNumber.classList.add("good");
       imcInfo.classList.add("good");
-      showImage();
+      containerImg.style.backgroundImage = 'url("img/good.png")';
       break;
     case "Sobrepeso":
       imcNumber.classList.add("low");
       imcInfo.classList.add("low");
+      containerImg.style.backgroundImage = 'url("img/low.png")';
       break;
     case "Obesidade":
       imcNumber.classList.add("medium");
       imcInfo.classList.add("medium");
+      containerImg.style.backgroundImage = 'url("img/medium.png")';
       break;
     case "Obesidade grave":
       imcNumber.classList.add("high");
       imcInfo.classList.add("high");
+      containerImg.style.backgroundImage = 'url("img/high.png")';
       break;
   }
 
   showOrHideResults();
+  showImage();
 });
 
 clearBtn.addEventListener("click", (e) => {
@@ -175,12 +183,12 @@ clearBtn.addEventListener("click", (e) => {
 backBtn.addEventListener("click", (e) => {
   cleanInputs();
   showOrHideResults();
+  containerImg.style.position = "absolute";
+  containerImg.style.transition = "opacity 3.9s ease";
+  containerImg.classList.remove("show");
 });
 
 function showImage() {
-  const containerImg = document.querySelector(".container-img");
-  containerImg.classList.add("show"); // Adiciona a classe show para fazer a div aparecer suavemente
-  // containerImg.style.display = "block";
+  containerImg.style.position = "relative";
+  containerImg.classList.add("show");
 }
-
-// Você pode chamar a função showImage() no momento apropriado no seu código JavaScript para fazer a div aparecer.

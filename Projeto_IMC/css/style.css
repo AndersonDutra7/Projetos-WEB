@@ -32,6 +32,8 @@ body {
   );
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
+  position: relative;
+  z-index: 1;
 }
 
 #calc-container h2 {
@@ -209,16 +211,22 @@ button:hover {
   min-height: 400px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
-  background-image: url("../img/negativo.png");
   background-size: cover;
   background-position: center;
-  display: none;
   opacity: 0;
   transition: opacity 3.9s ease;
+  position: absolute;
 }
 
 .container-img.show {
-  opacity: 1; /* Quando a classe show for adicionada, a div aparece */
+  opacity: 1;
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
 }
 
 @media screen and (max-width: 430px) {
