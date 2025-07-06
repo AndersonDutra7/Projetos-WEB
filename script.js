@@ -47,7 +47,6 @@ window.addEventListener("scroll", () => {
 // ANIMAÇÃO AO ROLAR
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log("Vendo elemento:", entry.target); // Debug
     if (entry.isIntersecting) {
       entry.target.classList.add("active");
       // Para animar só uma vez:
