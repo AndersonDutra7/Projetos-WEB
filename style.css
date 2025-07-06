@@ -13,7 +13,9 @@ body {
 }
 
 .interface {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .flex {
@@ -33,8 +35,7 @@ body {
 
 button:hover {
   box-shadow: 0px 0px 20px rgb(107, 107, 207);
-  transform: scale(1.02);
-  transform: scale(1.09s);
+  transform: scale(1.09);
   background-color: aliceblue;
 }
 
@@ -100,6 +101,17 @@ h2.titulo span::after {
   transition: 0.2s;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.6s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*ESTILO HEADER*/
 header {
   padding: 40px 4%;
@@ -137,8 +149,7 @@ header img {
 
 header img:hover {
   box-shadow: 0px 0px 20px rgb(107, 107, 207);
-  transform: scale(1.02);
-  transform: scale(1.09s);
+  transform: scale(1.09);
   background-color: aliceblue;
 }
 
@@ -254,7 +265,7 @@ section.topo-do-site .flex {
   animation: incandescente 0.7s infinite alternate;
 }
 
-.topo-do-site h1 spam {
+.topo-do-site h1 span {
   color: rgb(107, 107, 207);
 }
 
@@ -294,6 +305,10 @@ section.topo-do-site .flex {
   animation: flutuar 3s ease-in-out infinite alternate;
 }
 
+.topo-do-site h2 {
+  color: aliceblue;
+}
+
 .topo-do-site p {
   font-size: 24px;
   color: aliceblue;
@@ -307,6 +322,33 @@ section.topo-do-site .flex {
   100% {
     top: 15px;
   }
+}
+
+/*TECNOLOGIAS*/
+.tecnologias {
+  padding: 80px 4%;
+}
+
+.icons-tech {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons-tech i {
+  font-size: 64px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.icons-tech i:hover {
+  transform: scale(1.2);
 }
 
 /*ESPECIALIDADES*/
@@ -370,7 +412,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre p {
   margin: 20px 0;
-  text-align: justify;
+  text-align: start;
 }
 
 /*PORTFOLIO*/
@@ -472,8 +514,7 @@ form .btn-enviar input {
 
 form .btn-enviar input:hover {
   box-shadow: 0px 0px 20px rgb(107, 107, 207);
-  transform: scale(1.02);
-  transform: scale(1.09s);
+  transform: scale(1.09);
   background-color: aliceblue;
 }
 
@@ -597,7 +638,7 @@ footer .line-footer p i a {
 
   .especialidades .especialidades-box p {
     font-size: 20px;
-    text-align: justify;
+    text-align: start;
   }
 
   /* SOBRE */
@@ -638,6 +679,31 @@ footer .line-footer p i a {
     gap: 50px;
   }
 
+  /* TECNOLOGIAS */
+  .tecnologias {
+    padding: 80px 20px;
+  }
+
+  .icons-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+  .icons-tech i {
+    font-size: 64px;
+    color: #610bef;
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+
+  .icons-tech i:hover {
+    transform: scale(1.2);
+    color: #7c59f9;
+  }
+
   /* PORTFOLIO */
   .img-port {
     width: 100%;
@@ -675,7 +741,7 @@ footer .line-footer p i a {
   }
 
   .topo-do-site p {
-    text-align: center;
+    text-align: start;
   }
 
   .especialidades .especialidades-box p {

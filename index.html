@@ -1,203 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="shortcut icon" href="../imagens/perfil.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Anderson Dutra - Flutter & Web Developer</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/img-btn-inicio.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
+  <body>
     <header id="header">
-        <div class="interface">
-            <div class="logo">
-                <a href="#sobre">
-                    <img src="imagens/Perfil.png" alt="">
-                </a>
-            </div><!--logo-->
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#portfolio">Projetos</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato">
-                <a href="#formulario">
-                    <button>Contato</button>
-                </a>
-            </div><!--btn-contato-->
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
-            </div>
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Ínicio</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#portfolio">Projetos</a></li>
-                        <li><a href="#formulario">Contato</a></li>
-                    </ul>
-                </nav>
-
-            </div><!--menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu"></div>
-        </div> <!--interface-->
-
+      <div class="interface">
+        <div class="logo">
+          <a href="#sobre">
+            <img
+              src="imagens/img-btn-inicio.png"
+              alt="Foto de Anderson Dutra - Desenvolvedor Flutter"
+            />
+          </a>
+        </div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#formulario">
+            <button>Contato</button>
+          </a>
+        </div>
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#tecnologias">Tecnologias</a></li>
+              <li><a href="#portfolio">Projetos</a></li>
+              <li><a href="#formulario">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
     </header>
+
     <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>Olá! Seja bem vindo <spam>!!!</spam><br>Sou Anderson Dutra <spam>...</spam></h1>
-                        <p>Transformando paixão em código e desafios em oportunidades, <br> estou construindo meu caminho no mundo da tecnologia, <br> um byte de cada vez. </p>
-                        <div class="btn-contato"><a href="mailto:andersonrdutra7@gmail.com"><button>Entre em contato</button></a></div>
-                    <div><!--txt-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>Olá! Sou Anderson Dutra</h1>
+
+              <h2>
+                Flutter Developer | Mobile | WEB | Firebase · Dart · API REST
+              </h2>
+              <p>
+                Transformando <strong>paixão em código</strong> e
+                <strong>desafios em oportunidades</strong>, construo soluções
+                multiplataforma com <strong>performance</strong>,
+                <strong>design</strong> e <strong>propósito</strong>. Meu
+                caminho na tecnologia está sendo trilhado
+                <em>um byte de cada vez</em>.
+              </p>
+              <div class="btn-contato">
+                <a href="mailto:andersonrdutra7@gmail.com"
+                  ><button>Entre em contato</button></a
+                >
+              </div>
+            </div>
             <div class="img-topo-site">
-                <img src="imagens/eu-profile.png" alt="">
-            </div><!--img-topo-site-->
-        </section><!--topo-do-site-->
-        <section id="sobre" class="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="imagens/Perfil.png" alt="">
-                    </div><!--img-sobre-->
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER,<span>SOU ANDERSON DUTRA!</span></h2>
-                        <p>Sou alguém apaixonado por escrever códigos e transformar desafios em soluções que impactam no dia a dia das pessoas. Minha maior motivação vem da família, especialmente minha filha Letícia e nossos fiéis doguinhos, Ralph e Teddy. Juntos, me inspiram a transformar ideias em código, unindo criatividade e funcionalidade.</p>
-                        <p>Meu objetivo é entregar projetos que além de atender as necessidades dos clientes, também encantem pela experiência. Com dedicação e energia, encaro cada projeto como uma oportunidade única de combinar técnica e propósito, trazendo à vida soluções que fazem a diferença. Se você busca um profissional comprometido em criar aplicações envolventes e de alta qualidade, conte comigo para tornar suas ideias realidade!</p>
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/andersonr.dutra/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/anderson-dutra-88b294211/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/AndersonDutra7" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        </div>
-                    </div><!--txt-sobre-->
+              <img
+                src="imagens/eu-profile.png"
+                alt="Foto de Anderson Dutra desenvolvendo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sobre" class="sobre reveal">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="imagens/formatura3.png" alt="" />
+            </div>
+            <!--img-sobre-->
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER,<span>SOU ANDERSON DUTRA!</span></h2>
+              <p>
+                Sou alguém apaixonado por programação e transformar desafios em
+                soluções tecnológicas que impactam positivamente o dia a dia das
+                pessoas. Hoje, atuo como desenvolvedor focado em aplicações
+                mobile e web com Flutter e Dart, criando experiências modernas,
+                responsivas e performáticas para Android, iOS e Web.
+              </p>
+              <p>
+                Tenho também vivência no desenvolvimento fullstack, utilizando
+                Python com Django no back-end e tecnologias como HTML, CSS,
+                JavaScript e Flutter Web no front-end, sempre aplicando
+                princípios de usabilidade, acessibilidade e arquitetura
+                escalável. Trabalho com integração de APIs REST, Firebase
+                (Firestore, Auth, Storage), gerenciamento de estado e boas
+                práticas de organização de código para garantir aplicações
+                robustas e fáceis de evoluir.
+              </p>
+              <p>
+                Minha maior motivação vem da família — especialmente minha filha
+                Letícia e nossos fiéis companheiros, Ralph e Teddy. Eles me
+                inspiram diariamente a transformar ideias em soluções
+                funcionais, unindo criatividade, propósito e tecnologia.
+              </p>
+              <p>
+                Cada projeto que abraço é mais do que uma entrega: é uma chance
+                de inovar, aprender e evoluir. Se você busca um profissional
+                comprometido, apaixonado por tecnologia e focado em gerar valor
+                real através do código, estou pronto para embarcar nessa jornada
+                com você.
+              </p>
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/andersonr.dutra/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/anderson-dutra-88b294211/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/AndersonDutra7" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+            <!--txt-sobre-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--sobre-->
 
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--sobre-->
-        <section id="especialidades" class="especialidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span>
-                </h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-window"></i>
-                        <h3>Web Sites</h3>
-<p>Interfaces web modernas com visual atrativo e responsivo, ideais para páginas institucionais internas, sistemas de apresentação ou landing pages ricas em interatividade. Utilizo Flutter Web para criar experiências envolventes com foco em design, acessibilidade e usabilidade.
-</p>                    </div><!--especialidades-box-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-window-plus"></i>
-                        <h3>Web Apps</h3>
-<p>Aplicações web modernas e responsivas com interface dinâmica e integração com APIs. Utilizando Flutter Web e Firebase, desenvolvo soluções como sistemas internos, dashboards e web apps interativos, sempre com foco em performance, segurança e escalabilidade.
-</p>                    </div><!--especialidades-box-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-phone"></i>
-                        <h3>Mobile</h3>
-<p>Aplicativos móveis de alto desempenho para iOS e Android, desenvolvidos com Flutter. Com uma única base de código, garanto uma experiência fluida, responsiva e integrada aos recursos nativos do dispositivo, entregando qualidade e rapidez para seus usuários.
-</p>                    </div><!--especialidades-box-->
+      <section id="especialidades" class="especialidades reveal">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-phone"></i>
+              <h3>Mobile</h3>
+              <p>
+                Desenvolvo aplicações móveis multiplataforma com Flutter e Dart,
+                entregando soluções modernas, responsivas e performáticas para
+                Android, iOS e Web, com foco em experiência do usuário e
+                performance.
+              </p>
+            </div>
+            <!--especialidades-box-->
+            <div class="especialidades-box">
+              <i class="bi bi-window"></i>
+              <h3>Web Fullstack</h3>
+              <p>
+                Atuo com desenvolvimento web fullstack, usando Python (Django)
+                no back-end e tecnologias como HTML, CSS, JavaScript e Flutter
+                Web no front-end, sempre aplicando princípios de usabilidade e
+                acessibilidade.
+              </p>
+            </div>
+            <!--especialidades-box-->
+            <div class="especialidades-box">
+              <i class="bi bi-cloud-check"></i>
+              <h3>Integrações & Firebase</h3>
+              <p>
+                Experiência com Firestore, Auth e Storage, integração de APIs
+                REST, gerenciamento de estados e arquitetura escalável para
+                garantir segurança, performance e manutenção facilitada.
+              </p>
+            </div>
+            <!--especialidades-box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
+      <section id="portfolio" class="portfolio reveal">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+          <div class="flex">
+            <a href="Clone_Home_Instagran/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/homeInsta.png)"
+              >
+                <div class="overlay">Clone Home Instagram</div>
+              </div>
+            </a>
+            <a href="Projeto_Tabuada/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/tabuada.png)"
+              >
+                <div class="overlay">Gerador de Tabuada</div>
+              </div>
+            </a>
+            <a href="ProjetoFilmeAPI/" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/buscadorFilmes.PNG)"
+              >
+                <div class="overlay">Buscador de Filmes</div>
+              </div>
+            </a>
+            <a href="Gerador_QRCode/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/qrcode.png)"
+              >
+                <div class="overlay">Gerador de QR Code</div>
+              </div>
+            </a>
+            <a href="Projeto_IMC/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/calcImc.png)"
+              >
+                <div class="overlay">Calculadora de IMC</div>
+              </div>
+            </a>
+            <a href="Projeto_ToDo/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/to-do-list.png)"
+              >
+                <div class="overlay">To Do List</div>
+              </div>
+            </a>
+            <a href="Projeto_Gerador_Senhas/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/gerador.jpg)"
+              >
+                <div class="overlay">Gerador de Senhas</div>
+              </div>
+            </a>
+            <a href="Projeto_DevNotes/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/devNotes.jpg)"
+              >
+                <div class="overlay">DevNotes</div>
+              </div>
+            </a>
+            <a href="GeradorBoxShadow/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/geradorBoxShadow.jpg)"
+              >
+                <div class="overlay">Box Shadow Generator</div>
+              </div>
+            </a>
+            <a href="Eco-Mercado/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/ecoMercado.png)"
+              >
+                <div class="overlay">Eco-Mercado</div>
+              </div>
+            </a>
+            <a href="GTA-Site-DevEmDobro/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/gta5.png)"
+              >
+                <div class="overlay">Page GTA 5</div>
+              </div>
+            </a>
+            <a href="OnePieceDevEmDobro/src/index.html" target="_blank">
+              <div
+                class="img-port"
+                style="background-image: url(imagens/onePiece.PNG)"
+              >
+                <div class="overlay">Page One Piece</div>
+              </div>
+            </a>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portfolio-->
+      <section class="formulario reveal">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+          <form
+            action="https://formsubmit.co/andersonrdutra7@gmail.com"
+            method="POST"
+            id="formulario"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://andersondutra7.github.io/Projetos-WEB/sucess"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Mensagem recebida! Logo logo, entrarei em contato... Obrigado!!!"
+            />
+            <input
+              type="text"
+              id="input-nome"
+              name="nome-contato"
+              placeholder="Seu nome:"
+              required
+            />
+            <input
+              type="email"
+              id="input-mail"
+              name="email-contato"
+              placeholder="Seu e-mail:"
+              required
+            />
+            <input
+              type="tel"
+              id="input-fone"
+              name="fone-contato"
+              placeholder="Seu fone:"
+              maxlength="15"
+              pattern="\(\d{2}\)\s*\d{5}-\d{4}"
+            />
+            <textarea
+              name=""
+              id="input-msg"
+              name="msg-contato"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-enviar">
+              <input type="submit" value="ENVIAR" />
+            </div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
 
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--especialidades-->
-        <section id="portfolio" class="portfolio">
-            <div class="interface">
-                <h2 class="titulo">MEU <span>PORTFÓLIO.</span> </h2>
-                <div class="flex">
-                    <a href="hTR_Host/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/hTRHost.jpg);"><div class="overlay">hTR Host</div></div>
-                    </a>
-                    <a href="Clone_Home_Instagran/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/homeInsta.png);"><div class="overlay">Clone Home Instagram</div></div>
-                    </a>
-                    <a href="Projeto_Tabuada/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/tabuada.png);"><div class="overlay">Gerador de Tabuada</div></div>
-                    </a>
-                    <a href="ProjetoFilmeAPI/" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/buscadorFilmes.PNG);"><div class="overlay">Buscador de Filmes</div></div>
-                    </a>
-                    <a href="Gerador_QRCode/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/qrcode.png);"><div class="overlay">Gerador de QR Code</div></div>
-                    </a>
-                    <a href="Projeto_IMC/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/calcImc.png);"><div class="overlay">Calculadora de IMC</div></div>
-                    </a>
-                    <a href="Projeto_ToDo/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/to-do-list.png);"><div class="overlay">To Do List</div></div>
-                    </a>
-                    <a href="Projeto_Gerador_Senhas/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/gerador.jpg);"><div class="overlay">Gerador de Senhas</div></div>
-                    </a>
-                    <a href="Projeto_DevNotes/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/devNotes.jpg);"><div class="overlay">DevNotes</div></div>
-                    </a>
-                    <a href="GeradorBoxShadow/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/geradorBoxShadow.jpg);"><div class="overlay">Box Shadow Generator</div></div>
-                    </a>
-                    <a href="Eco-Mercado/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/ecoMercado.png);"><div class="overlay">Eco-Mercado</div></div>
-                    </a>
-                    <a href="GTA-Site-DevEmDobro/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/gta5.png);"><div class="overlay">Page GTA 5</div></div>
-                    </a>
-                    <a href="OnePieceDevEmDobro/src/index.html" target="_blank">
-                        <div class="img-port" style="background-image: url(imagens/onePiece.PNG);"><div class="overlay">Page One Piece</div></div>
-                    </a>
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--portfolio-->
-        <section class="formulario">
-            <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-                <form action="https://formsubmit.co/andersonrdutra7@gmail.com" method="POST" id="formulario">
-                    <input type="hidden" name="_next" value="https://andersondutra7.github.io/Projetos-WEB/sucess">
-                    <input type="hidden" name="_autoresponse" value="Mensagem recebida! Logo logo, entrarei em contato... Obrigado!!!">
-                    <input type="text" id="input-nome" name="nome-contato" placeholder="Seu nome:" required >
-                    <input type="email" id="input-mail" name="email-contato" placeholder="Seu e-mail:" required>
-                    <input type="tel" id="input-fone" name="fone-contato" placeholder="Seu fone:" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}">
-                    <textarea name="" id="input-msg" name="msg-contato" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </form>
-            </div><!--interface-->
-        </section><!--formulario-->
-        <footer>
-            <div class="interface"><!--interface-->
-                <div class="line-footer">
-                    <div class="flex">
-                        <div class="footer-ralph">
-                            <img src="imagens/ralph-rosto.png" alt="Ralph">
-                        </div>
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/andersonr.dutra/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/anderson-dutra-88b294211/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/AndersonDutra7" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--btn-social-->
-                        <div class="footer-teddy">
-                            <img src="imagens/teddy-rosto.png" alt="Teddy">
-                        </div>
-                        <a href="https://wa.me/48996046421" target="_blank" class="btn-whatsapp"><i class="bi bi-whatsapp"></i></a>
-                    </div><!--flex-->
-                </div><!--line-footer-->
-                <div class="line-footer borda">
-                    <p><i class="bi bi-envelope-fill"> <a href="mailto:andersonrdutra7@gmail.com"> andersonrdutra7@gmail.com</a></i></p>
-                    <p>Created by Anderson Dutra</p>
-                </div><!--line-footer-->
-            </div><!--interface-->
-        </footer>
+      <footer>
+        <div class="interface reveal">
+          <!--interface-->
+          <section id="tecnologias" class="tecnologias">
+            <h2 class="titulo">Minhas Stacks</h2>
+            <div class="flex">
+              <div class="icons-tech">
+                <i class="devicon-flutter-plain colored" title="Flutter"></i>
+                <i class="devicon-dart-plain colored" title="Dart"></i>
+                <i class="devicon-firebase-plain colored" title="Firebase"></i>
+                <i class="devicon-python-plain colored" title="Python"></i>
+                <i class="devicon-django-plain colored" title="Django"></i>
+                <i class="devicon-html5-plain colored" title="HTML5"></i>
+                <i class="devicon-css3-plain colored" title="CSS3"></i>
+                <i
+                  class="devicon-javascript-plain colored"
+                  title="JavaScript"
+                ></i>
+              </div>
+            </div>
+          </section>
+          <div class="line-footer">
+            <div class="flex">
+              <div class="footer-ralph">
+                <img src="imagens/ralph-rosto.png" alt="Ralph" />
+              </div>
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/andersonr.dutra/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/anderson-dutra-88b294211/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/AndersonDutra7" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+              <!--btn-social-->
+              <div class="footer-teddy">
+                <img src="imagens/teddy-rosto.png" alt="Teddy" />
+              </div>
+              <a
+                href="https://wa.me/48996046421"
+                target="_blank"
+                class="btn-whatsapp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+            <!--flex-->
+          </div>
+          <!--line-footer-->
+          <div class="line-footer borda">
+            <p>
+              <i class="bi bi-envelope-fill">
+                <a href="mailto:andersonrdutra7@gmail.com">
+                  andersonrdutra7@gmail.com</a
+                ></i
+              >
+            </p>
+            <p>Created by Anderson Dutra</p>
+          </div>
+          <!--line-footer-->
+        </div>
+        <!--interface-->
+      </footer>
     </main>
-<body>
-    
-</body>
+  </body>
 </html>

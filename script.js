@@ -43,3 +43,18 @@ window.addEventListener("scroll", () => {
     header.style.transition = "0.7s";
   }
 });
+
+// ANIMAÇÃO AO ROLAR
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log("Vendo elemento:", entry.target); // Debug
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      // Para animar só uma vez:
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Ativa para todos os elementos com a classe .reveal
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
