@@ -115,7 +115,7 @@ h2.titulo span::after {
 /*ESTILO HEADER*/
 header {
   padding: 40px 4%;
-  /* transition: transform 0.3s ease; */
+  transition: transform 0.3s ease;
 }
 
 header.fixed {
@@ -151,6 +151,11 @@ header img:hover {
   box-shadow: 0px 0px 20px rgb(107, 107, 207);
   transform: scale(1.09);
   background-color: aliceblue;
+}
+
+.logo img {
+  width: 100px;
+  transition: width 0.3s ease;
 }
 
 header a {
@@ -749,6 +754,10 @@ footer .line-footer p i a {
     justify-content: center;
     gap: 16px;
     margin-top: 10px;
+  }
+
+  .logo img {
+    width: 60px;
   }
 }
 
