@@ -415,6 +415,13 @@ section.sobre .flex {
   text-align: start;
 }
 
+.img-sobre img {
+  /* width: 100%; */
+  height: auto;
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
 /*PORTFOLIO*/
 section.portfolio {
   padding: 80px 4%;
