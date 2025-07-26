@@ -57,7 +57,7 @@ h2.titulo span::after {
   border-left: 2px solid rgb(107, 107, 207);
   right: -10px;
   opacity: 1;
-  animation: digitar 20s steps(15) infinite;
+  animation: digitar 30s steps(15) infinite;
   width: calc(100% + 10px);
   background-color: black;
 }
@@ -265,13 +265,14 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
   color: aliceblue;
+  line-height: 50px;
   font-size: 42px;
-  line-height: 40px;
-  animation: incandescente 0.7s infinite alternate;
+  animation: incandescente 0.9s infinite alternate;
 }
 
 .topo-do-site h1 span {
   color: rgb(107, 107, 207);
+  text-shadow: 0 0 8px rgb(107, 107, 207);
 }
 
 .topo-do-site .sucess-titulo {
@@ -581,7 +582,7 @@ footer .line-footer p i a {
   right: 40px;
   z-index: 1000;
   position: fixed;
-  animation: incandescente 0.7s infinite alternate;
+  animation: incandescente 0.9s infinite alternate;
 }
 
 .btn-whatsapp:hover {
