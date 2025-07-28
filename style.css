@@ -101,6 +101,11 @@ h2.titulo span::after {
   transition: 0.2s;
 }
 
+.btn-social img {
+  width: 48px;
+  height: 48px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(60px);
@@ -255,6 +260,7 @@ header nav.menu-desktop ul li:hover {
 /*ESTILO DO TOPO DO SITE*/
 section.topo-do-site {
   padding: 40px 4%;
+  min-height: 400px;
 }
 
 section.topo-do-site .flex {
@@ -268,6 +274,10 @@ section.topo-do-site .flex {
   line-height: 50px;
   font-size: 42px;
   animation: incandescente 0.9s infinite alternate;
+}
+
+.txt-topo-site h1 {
+  transition: margin 0.3s ease;
 }
 
 .topo-do-site h1 span {
@@ -298,6 +308,13 @@ section.topo-do-site .flex {
 
 .img-topo-site {
   box-shadow: 0 0 20px rgba(240, 248, 255, 0.486);
+}
+
+.img-topo-site img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .topo-do-site img {
