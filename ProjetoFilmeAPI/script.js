@@ -77,19 +77,16 @@ async function getApi(filme, pagina) {
         filme.Poster !== "N/A" ? filme.Poster : "imagens/semImagem.PNG";
 
       filmeInfo.innerHTML += `
-                <div class="filmes">
-                    <div class="movie-header">
-                        <h2 class="filmes-h2">${filme.Title}</h2>
-                        <h3 class="filmes-h3">Lançamento: ${filme.Year}</h3>
-                    </div>
-                    <p><p>
-        <img src="${posterUrl}" 
-             alt="Poster de ${filme.Title}"
-             onerror="this.onerror=null;this.src='imagens/semImagem.PNG';">
-      </p>
-</p>
-                </div>
-            `;
+        <div class="filmes">
+            <h2 class="filmes-h2">${filme.Title}</h2>
+            <h3 class="filmes-h3">Lançamento: ${filme.Year}</h3>
+            <p>
+              <img src="${posterUrl}" 
+                   alt="Poster de ${filme.Title}"
+                   onerror="this.onerror=null;this.src='imagens/semImagem.PNG';">
+            </p>
+        </div>
+      `;
     });
 
     // 6. Atualizar Paginação
