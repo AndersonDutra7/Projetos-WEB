@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph & Teddy Blog 🐾</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../imagens/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img src="imagens/ralph.png" alt="Ralph" class="logo" />
+        <h1 class="site-title">Ralph & Teddy Blog</h1>
+        <img src="imagens/teddy.png" alt="Teddy" class="logo" />
+      </div>
+      <p class="slogan">
+        Um espaço divertido e criativo para aprender, programar e compartilhar
+        ideias! 💡
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <h2>Doguinho Posts</h2>
+        <p>
+          Crie, edite e exclua posts de forma simples e intuitiva. Explore o
+          poder do <strong>JSONPlaceholder API</strong> e domine o CRUD
+          completo!
+        </p>
+      </section>
+
+      <!-- Formulário de criação e atualização -->
+      <form class="formulario">
+        <input type="hidden" id="postId" />
+        <input
+          id="title"
+          class="form-control"
+          type="text"
+          placeholder="Título do Post"
+          required
+        />
+        <textarea
+          id="body"
+          class="form-control"
+          rows="4"
+          placeholder="Conteúdo do Post"
+          required
+        ></textarea>
+        <button class="btn-criar" type="submit">Publicar</button>
+      </form>
+
+      <!-- Área de exibição dos posts -->
+      <section class="posts"></section>
+    </main>
+
+    <footer class="footer">
+      <p>🐶 Criado com 💙 por <strong>Anderson Dutra</strong></p>
+      <small>Powered by JSONPlaceholder API</small>
+    </footer>
+  </body>
+</html>
