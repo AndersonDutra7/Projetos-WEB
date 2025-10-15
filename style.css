@@ -439,7 +439,6 @@ section.sobre .flex {
 }
 
 .img-sobre img {
-  /* width: 100%; */
   height: auto;
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
@@ -635,7 +634,7 @@ footer .line-footer p i a {
   }
 
   section.topo-do-site {
-    padding: 20px 8%;
+    padding: 20px 4%;
   }
 
   section.topo-do-site .flex {
@@ -649,7 +648,7 @@ footer .line-footer p i a {
 
   /* ESPECIALIDADES */
   section.especialidades {
-    padding: 40px 8%;
+    padding: 20px 4%;
   }
 
   section.especialidades h2 {
@@ -703,7 +702,7 @@ footer .line-footer p i a {
   }
 
   section .portfolio {
-    padding: 80px 8%;
+    padding: 20px 4%;
   }
 
   section.portfolio .flex {
@@ -750,6 +749,34 @@ footer .line-footer p i a {
 }
 
 @media screen and (max-width: 600px) {
+  header,
+  .tecnologias,
+  section.sobre,
+  section.formulario,
+  footer {
+    padding: 20px 2%;
+  }
+
+  .topo-do-site h2 {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    margin: 20px 0px;
+  }
+
+  .topo-do-site p {
+    margin: 20px;
+    font-style: italic;
+  }
+
+  section.sobre .flex {
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  section.especialidades .flex {
+    gap: 10px;
+  }
+
   footer .line-footer .flex {
     flex-direction: column;
     align-items: center;
