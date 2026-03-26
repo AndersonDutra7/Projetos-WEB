@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+Multani&family=Roboto&family=Rubik&family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+Multani&family=Roboto&family=Rubik&family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 /*ESTILO GERAL*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -51,7 +51,7 @@ h2.titulo span {
 }
 
 h2.titulo span::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   border-left: 2px solid rgb(107, 107, 207);
@@ -568,6 +568,27 @@ footer .line-footer {
   padding: 20px 0;
 }
 
+/* Container que envolve os textos e a imagem final */
+.line-footer.borda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+/* Estilização da sua foto (slide.png) */
+.line-footer.borda img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #58a6ff;
+  display: block;
+}
+
 .borda {
   border-top: 2px solid rgb(107, 107, 207);
 }
@@ -587,6 +608,25 @@ footer .line-footer p i a {
   font-size: 24px;
   text-decoration: none;
   color: rgb(107, 107, 207);
+}
+
+/* Centraliza os textos e itens da última linha do footer */
+.final-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Estiliza a imagem circular */
+.img-final-circular {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #58a6ff;
 }
 
 .btn-whatsapp {
@@ -817,7 +857,7 @@ footer .line-footer p i a {
   }
 
   h2.titulo span::after {
-    content: "";
+    content: '';
     position: absolute;
     height: 100%;
     border-left: 2px solid rgb(107, 107, 207);
